@@ -18,10 +18,10 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "Delete FROM Invalid_Scaling WHERE Log in {{this.params.data}};",
+      "body": "DELETE FROM Invalid_Scaling WHERE Log IN ({{this.params.data}});",
       "pluginSpecifiedTemplates": [
         {
-          "value": true
+          "value": false
         }
       ]
     },

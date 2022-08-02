@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "INSERT INTO Operations (Operations)\n  VALUES\t{{this.params.data}};",
+      "body": "INSERT INTO Operations (Operations,Date_Added)\n  VALUES\t{{this.params.data}};",
       "pluginSpecifiedTemplates": [
         {
           "value": false
@@ -44,5 +44,5 @@
   },
   "id": "WeighBridge_Insert_Operations",
   "deleted": false,
-  "gitSyncId": "62c64eab5a06d81bded2fac9_62d8f73f5a06d81bded2fdce"
+  "gitSyncId": "62c64eab5a06d81bded2fac9_62da11015a06d81bded2fe55"
 }

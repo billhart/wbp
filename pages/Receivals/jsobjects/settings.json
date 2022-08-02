@@ -1,0 +1,20 @@
+{
+  "unpublishedCollection": {
+    "name": "settings",
+    "pageId": "Receivals",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tfontsize: '0.75rem'\n}",
+    "variables": [
+      {
+        "name": "fontsize",
+        "value": "'0.75rem'"
+      }
+    ]
+  },
+  "id": "Receivals_settings",
+  "deleted": false,
+  "gitSyncId": "62c64eab5a06d81bded2fac9_62e8b8bb5a06d81bded300dd"
+}

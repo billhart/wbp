@@ -18,19 +18,24 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "DELETE FROM Invalid_Scaling\n  WHERE Log = {{invalid_table.triggeredRow.Log}};",
+      "body": "DELETE FROM Invalid_Scaling WHERE Log IN ({{invalid_table.selectedRows.map(row => `'${row.Log}'`).toString()}});\n\t\n\t",
       "pluginSpecifiedTemplates": [
         {
-          "value": true
+          "value": false
         }
       ]
     },
     "executeOnLoad": false,
+    "dynamicBindingPathList": [
+      {
+        "key": "body"
+      }
+    ],
     "isValid": true,
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "invalid_table.triggeredRow.Log"
+      "invalid_table.selectedRows.map(row => `'${row.Log}'`).toString()"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

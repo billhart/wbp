@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "INSERT INTO Coupe (Coupe)\n  VALUES\t{{this.params.data}};",
+      "body": "INSERT INTO Coupe (Coupe,Date_Added)\n  VALUES\t{{this.params.data}};",
       "pluginSpecifiedTemplates": [
         {
           "value": false
@@ -44,5 +44,5 @@
   },
   "id": "WeighBridge_Insert_Coupe",
   "deleted": false,
-  "gitSyncId": "62c64eab5a06d81bded2fac9_62d8f7285a06d81bded2fdca"
+  "gitSyncId": "62c64eab5a06d81bded2fac9_62da11015a06d81bded2fe41"
 }

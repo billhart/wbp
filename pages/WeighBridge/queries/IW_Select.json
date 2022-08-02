@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT * FROM Invalid_WeighBridge\nWHERE WB_Docket like '%{{iw_data_table.searchText || \"\"}}%'\nORDER BY {{iw_data_table.sortOrder.column || 'WB_Docket'}} {{iw_data_table.sortOrder.order || \"DESC\"}};",
+      "body": "SELECT * FROM Invalid_WeighBridge\nWHERE (WB_Docket like '%{{iw_data_table.searchText || \"\"}}%' OR Docket like '%{{iw_data_table.searchText || \"\"}}%')\nORDER BY {{iw_data_table.sortOrder.column || 'WB_Docket'}} {{iw_data_table.sortOrder.order || \"DESC\"}};",
       "pluginSpecifiedTemplates": [
         {
           "value": false
@@ -46,5 +46,5 @@
   },
   "id": "WeighBridge_IW_Select",
   "deleted": false,
-  "gitSyncId": "62c64eab5a06d81bded2fac9_62c92c9f5a06d81bded2fb44"
+  "gitSyncId": "62c64eab5a06d81bded2fac9_62da11015a06d81bded2fe42"
 }

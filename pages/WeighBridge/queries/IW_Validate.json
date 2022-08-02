@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "INSERT INTO WeighBridge (\n\tDocket,\n\tWB_Docket,\n\tDate,\n\tRego,\n\tSupplier,\n\tOperations,\n\tCoupe,\n\tHarvestor,\n\tGross,\n\tTare,\n\tGMT,\n\tGrade,\n\tLength\n)\nVALUES (\n\t'{{IW_Validate_Form.formData.Docket}}',\n\t'{{iw_data_table.selectedRow.WB_Docket}}',\n\t'{{IW_Validate_Form.formData.Date}}',\n\t'{{IW_Validate_Form.formData.Rego}}',\n\t'{{IW_Validate_Form.formData.Supplier}}',\n\t'{{IW_Validate_Form.formData.Operations}}',\n\t'{{IW_Validate_Form.formData.Coupe}}',\n\t'{{IW_Validate_Form.formData.Harvestor}}',\n\t'{{IW_Validate_Form.formData.Gross}}',\n\t'{{IW_Validate_Form.formData.Tare}}',\n\t'{{IW_Validate_Form.formData.GMT}}',\n\t'{{IW_Validate_Form.formData.Grade}}',\n\t'{{IW_Validate_Form.formData.Length}}'\n);\nDELETE FROM Invalid_WeighBridge\n  WHERE WB_Docket = {{iw_data_table.selectedRow.WB_Docket}};",
+      "body": "INSERT INTO WeighBridge (\n\tDocket,\n\tWB_Docket,\n\tDate,\n\tRego,\n\tSupplier,\n\tOperations,\n\tCoupe,\n\tHarvestor,\n\tFPP,\n\tGross,\n\tTare,\n\tGMT,\n\tGrade,\n\tLength\n)\nVALUES (\n\t'{{Edit_Invalid.data.DocketIn}}',\n\t'{{iw_data_table.selectedRow.WB_Docket}}',\n\t'{{Edit_Invalid.data.DateIn.split('T')[0]}}',\n\t'{{Edit_Invalid.data.RegoIn}}',\n\t'{{Edit_Invalid.data.SupplierIn}}',\n\t'{{Edit_Invalid.data.OperationsIn}}',\n\t'{{Edit_Invalid.data.CoupeIn}}',\n\t'{{Edit_Invalid.data.HarvestorIn}}',\n\t'{{Edit_Invalid.data.FPPIn}}',\n\t'{{Edit_Invalid.data.GrossIn}}',\n\t'{{Edit_Invalid.data.TareIn}}',\n\t'{{Edit_Invalid.data.GMTIn}}',\n\t'{{Edit_Invalid.data.GradeIn}}',\n\t'{{Edit_Invalid.data.LengthIn}}'\n);\nDELETE FROM Invalid_WeighBridge\n  WHERE WB_Docket = {{iw_data_table.selectedRow.WB_Docket}};",
       "pluginSpecifiedTemplates": [
         {
           "value": true
@@ -35,18 +35,19 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "IW_Validate_Form.formData.Coupe",
-      "IW_Validate_Form.formData.Date",
-      "IW_Validate_Form.formData.Docket",
-      "IW_Validate_Form.formData.GMT",
-      "IW_Validate_Form.formData.Grade",
-      "IW_Validate_Form.formData.Gross",
-      "IW_Validate_Form.formData.Harvestor",
-      "IW_Validate_Form.formData.Length",
-      "IW_Validate_Form.formData.Operations",
-      "IW_Validate_Form.formData.Rego",
-      "IW_Validate_Form.formData.Supplier",
-      "IW_Validate_Form.formData.Tare",
+      "Edit_Invalid.data.CoupeIn",
+      "Edit_Invalid.data.DateIn.split('T')[0]",
+      "Edit_Invalid.data.DocketIn",
+      "Edit_Invalid.data.FPPIn",
+      "Edit_Invalid.data.GMTIn",
+      "Edit_Invalid.data.GradeIn",
+      "Edit_Invalid.data.GrossIn",
+      "Edit_Invalid.data.HarvestorIn",
+      "Edit_Invalid.data.LengthIn",
+      "Edit_Invalid.data.OperationsIn",
+      "Edit_Invalid.data.RegoIn",
+      "Edit_Invalid.data.SupplierIn",
+      "Edit_Invalid.data.TareIn",
       "iw_data_table.selectedRow.WB_Docket"
     ],
     "userSetOnLoad": false,
@@ -56,5 +57,5 @@
   },
   "id": "WeighBridge_IW_Validate",
   "deleted": false,
-  "gitSyncId": "62c64eab5a06d81bded2fac9_62c92c9f5a06d81bded2fb46"
+  "gitSyncId": "62c64eab5a06d81bded2fac9_62da11015a06d81bded2fe48"
 }

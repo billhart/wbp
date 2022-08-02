@@ -25,7 +25,7 @@
         }
       ]
     },
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "dynamicBindingPathList": [],
     "isValid": true,
     "invalids": [],
@@ -38,5 +38,5 @@
   },
   "id": "WeighBridge_FPP",
   "deleted": false,
-  "gitSyncId": "62c64eab5a06d81bded2fac9_62dcff025a06d81bded2feb1"
+  "gitSyncId": "62c64eab5a06d81bded2fac9_62dd067a5a06d81bded2feb9"
 }

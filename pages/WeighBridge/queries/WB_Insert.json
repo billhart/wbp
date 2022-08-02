@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "INSERT INTO WeighBridge (\n\tDocket,\n\tWB_Docket,\n\tDate,\n\tRego,\n\tSupplier,\n\tOperations,\n\tCoupe,\n\tHarvestor,\n\tGross,\n\tTare,\n\tGMT,\n\tGrade,\n\tLength\n)\nVALUES (\n\t'{{WB_Insert_Form.data.Docket.toString()}}',\n\t'{{WB_Insert_Form.data.WB_Docket}}',\n\t'{{WB_Insert_Form.data.TransitDate}}',\n\t'{{WB_Insert_Form.data.Rego}}',\n\t'{{WB_Insert_Form.data.Select_Supplier}}',\n\t'{{WB_Insert_Form.data.Select_Operations}}',\n\t'{{WB_Insert_Form.data.Select_Coupe}}',\n\t'{{WB_Insert_Form.data.Select_Harvestor}}',\n\t'{{WB_Insert_Form.data.Gross}}',\n\t'{{WB_Insert_Form.data.Tare}}',\n\t'{{WB_Insert_Form.data.GMT}}',\n\t'{{WB_Insert_Form.data.Select_Grade}}',\n\t'{{WB_Insert_Form.data.Select_Length}}'\n);",
+      "body": "INSERT INTO WeighBridge (\n\tDocket,\n\tWB_Docket,\n\tDate,\n\tRego,\n\tSupplier,\n\tOperations,\n\tCoupe,\n\tHarvestor,\n\tFPP,\n\tGross,\n\tTare,\n\tGMT,\n\tGrade,\n\tLength\n)\nVALUES (\n\t'{{WB_Insert_Form.data.DocketVI.toString()}}',\n\t'{{WB_Insert_Form.data.WBDocketVI}}',\n\t'{{WB_Insert_Form.data.DateVI.split('T')[0]}}',\n\t'{{WB_Insert_Form.data.RegoVI}}',\n\t'{{WB_Insert_Form.data.SupplierVI}}',\n\t'{{WB_Insert_Form.data.OperationsVI}}',\n\t'{{WB_Insert_Form.data.CoupeVI}}',\n\t'{{WB_Insert_Form.data.HarvestorVI}}',\n\t'{{WB_Insert_Form.data.FPPVI}}',\n\t'{{WB_Insert_Form.data.GrossVI}}',\n\t'{{WB_Insert_Form.data.TareVI}}',\n\t'{{WB_Insert_Form.data.GMTVI}}',\n\t'{{WB_Insert_Form.data.GradeVI}}',\n\t'{{WB_Insert_Form.data.LengthVI}}'\n);",
       "pluginSpecifiedTemplates": [
         {
           "value": true
@@ -35,19 +35,20 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "WB_Insert_Form.data.Docket.toString()",
-      "WB_Insert_Form.data.GMT",
-      "WB_Insert_Form.data.Gross",
-      "WB_Insert_Form.data.Rego",
-      "WB_Insert_Form.data.Select_Coupe",
-      "WB_Insert_Form.data.Select_Grade",
-      "WB_Insert_Form.data.Select_Harvestor",
-      "WB_Insert_Form.data.Select_Length",
-      "WB_Insert_Form.data.Select_Operations",
-      "WB_Insert_Form.data.Select_Supplier",
-      "WB_Insert_Form.data.Tare",
-      "WB_Insert_Form.data.TransitDate",
-      "WB_Insert_Form.data.WB_Docket"
+      "WB_Insert_Form.data.CoupeVI",
+      "WB_Insert_Form.data.DateVI.split('T')[0]",
+      "WB_Insert_Form.data.DocketVI.toString()",
+      "WB_Insert_Form.data.FPPVI",
+      "WB_Insert_Form.data.GMTVI",
+      "WB_Insert_Form.data.GradeVI",
+      "WB_Insert_Form.data.GrossVI",
+      "WB_Insert_Form.data.HarvestorVI",
+      "WB_Insert_Form.data.LengthVI",
+      "WB_Insert_Form.data.OperationsVI",
+      "WB_Insert_Form.data.RegoVI",
+      "WB_Insert_Form.data.SupplierVI",
+      "WB_Insert_Form.data.TareVI",
+      "WB_Insert_Form.data.WBDocketVI"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
@@ -56,5 +57,5 @@
   },
   "id": "WeighBridge_WB_Insert",
   "deleted": false,
-  "gitSyncId": "62c64eab5a06d81bded2fac9_62cd21d25a06d81bded2fbf3"
+  "gitSyncId": "62c64eab5a06d81bded2fac9_62da11015a06d81bded2fe4d"
 }

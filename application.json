@@ -13,15 +13,7 @@
       "isDefault": false
     },
     {
-      "id": "Page2",
-      "isDefault": false
-    },
-    {
-      "id": "Page3",
-      "isDefault": false
-    },
-    {
-      "id": "Page4",
+      "id": "UploadCSV",
       "isDefault": false
     },
     {
@@ -29,27 +21,7 @@
       "isDefault": false
     },
     {
-      "id": "Page5 Copy",
-      "isDefault": false
-    },
-    {
-      "id": "Page5",
-      "isDefault": false
-    },
-    {
-      "id": "Page6",
-      "isDefault": false
-    },
-    {
-      "id": "UploadCSV",
-      "isDefault": false
-    },
-    {
-      "id": "Page7",
-      "isDefault": false
-    },
-    {
-      "id": "WeighBridgeTabs",
+      "id": "Receivals",
       "isDefault": false
     }
   ],

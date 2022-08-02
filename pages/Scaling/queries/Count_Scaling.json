@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT ( \n\tSELECT COUNT(*) FROM Raw_Scaling) AS raw,\n\t(\n\tSELECT COUNT(*) FROM Invalid_Scaling) AS invalid,\n\t(\n\tSELECT COUNT(*) FROM Scaling) AS scale\n",
+      "body": "SELECT ( \n\tSELECT COUNT(*) FROM Raw_Scaling) AS raw,\n\t(\n\tSELECT COUNT(*) FROM Invalid_Scaling) AS invalid,\n\t(\n\tSELECT COUNT(*) FROM Scaling) AS valid,\n\t(\n\tSELECT COUNT(*) FROM Reject_Scaling) AS rejects;\n",
       "pluginSpecifiedTemplates": [
         {
           "value": true
