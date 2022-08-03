@@ -6775,9 +6775,6 @@
                           "key": "schema.__root_schema__.children.col5.defaultValue"
                         },
                         {
-                          "key": "isVisible"
-                        },
-                        {
                           "key": "schema.__root_schema__.children.col4.defaultValue"
                         },
                         {
@@ -6843,9 +6840,6 @@
                           "key": "boxShadow"
                         },
                         {
-                          "key": "isVisible"
-                        },
-                        {
                           "key": "schema.__root_schema__.children.customField1.borderRadius"
                         },
                         {
@@ -6898,7 +6892,7 @@
                         "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                         "buttonVariant": "SECONDARY"
                       },
-                      "isVisible": "{{!!location_table.selectedRow.Harvestor}}",
+                      "isVisible": true,
                       "version": 1,
                       "parentId": "cg7q7gmxxt",
                       "renderMode": "CANVAS",
