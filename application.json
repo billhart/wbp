@@ -1,23 +1,11 @@
 {
   "pages": [
     {
-      "id": "Page1",
+      "id": "WeighBridge",
       "isDefault": true
     },
     {
       "id": "Scaling",
-      "isDefault": false
-    },
-    {
-      "id": "Constants",
-      "isDefault": false
-    },
-    {
-      "id": "UploadCSV",
-      "isDefault": false
-    },
-    {
-      "id": "WeighBridge",
       "isDefault": false
     },
     {
