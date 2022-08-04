@@ -1379,7 +1379,7 @@
                             {
                               "boxShadow": "none",
                               "widgetName": "Button4Copy1",
-                              "onClick": "{{Insert_Reject_IScaling.run(() => IScaling.run(() => VScaling.run(() => RejectScaling.run(() => Count_Scaling.run()))))}}",
+                              "onClick": "{{Insert_Reject_IScaling.run().then(() => IScaling.run().then(() => VScaling.run().then(() => RejectScaling.run().then(() => Count_Scaling.run()))))}}",
                               "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                               "dynamicPropertyPathList": [
                                 {
@@ -2128,7 +2128,7 @@
                                     {
                                       "boxShadow": "none",
                                       "widgetName": "Button3",
-                                      "onClick": "{{Parse_Invalid_Scaling.parse_data(() => IScaling.run(() => Invalid_Dockets.run(() => Count_Scaling.run())))}}",
+                                      "onClick": "{{Parse_Invalid_Scaling.parse_data().then(() => IScaling.run().then(() => Invalid_Dockets.run().then(() => Count_Scaling.run())))}}",
                                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                                       "dynamicPropertyPathList": [
                                         {
@@ -3411,7 +3411,7 @@
                     {
                       "boxShadow": "none",
                       "widgetName": "Button1Copy",
-                      "onClick": "{{Parse_Raw_Scaling.parse_data(); Count_Scaling.run()}}",
+                      "onClick": "{{Parse_Raw_Scaling.parse_data().then(() => Count_Scaling.run())}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                       "dynamicPropertyPathList": [
                         {
