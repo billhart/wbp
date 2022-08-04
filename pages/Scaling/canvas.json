@@ -2128,7 +2128,7 @@
                                     {
                                       "boxShadow": "none",
                                       "widgetName": "Button3",
-                                      "onClick": "{{Parse_Raw_Scaling.parse_data(() => IScaling.run(() => Invalid_Dockets.run(() => Count_Scaling.run())))}}",
+                                      "onClick": "{{Parse_Invalid_Scaling.parse_data(() => IScaling.run(() => Invalid_Dockets.run(() => Count_Scaling.run())))}}",
                                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                                       "dynamicPropertyPathList": [
                                         {
@@ -2163,7 +2163,7 @@
                                           "key": "borderRadius"
                                         }
                                       ],
-                                      "text": "Validate Docket Changes",
+                                      "text": "Validate Changes",
                                       "isDisabled": false,
                                       "key": "e6gyb8xyl3",
                                       "isDeprecated": false,
