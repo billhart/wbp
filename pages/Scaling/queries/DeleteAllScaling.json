@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "DELETE FROM Scaling;-- Specify a valid condition here. Removing the condition may delete everything in the table!",
+      "body": "DELETE FROM Scaling;\nDELETE FROM Invalid_Scaling;\nDELETE FROM Reject_Scaling;-- Specify a valid condition here. Removing the condition may delete everything in the table!",
       "pluginSpecifiedTemplates": [
         {
           "value": true

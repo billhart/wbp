@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "UPDATE Grade SET\n\t\tGrade = '{{update_Grade.fieldState.Grade.isVisible ? update_Grade.formData.Grade : update_Grade.sourceData.Grade}}',\n\t\tNotes = '{{update_Grade.fieldState.Notes.isVisible ? update_Grade.formData.Notes : update_Grade.sourceData.Notes}}'\nWHERE Grade = {{Grade_table.selectedRow.Grade}};",
+      "body": "UPDATE Grade SET\n\t\tGrade = '{{update_Grade.fieldState.Grade.isVisible ? update_Grade.formData.Grade : update_Grade.sourceData.Grade}}',\n\t\tNotes = '{{update_Grade.fieldState.Notes.isVisible ? update_Grade.formData.Notes : update_Grade.sourceData.Notes}}'\nWHERE Grade = {{grade_table.selectedRow.Grade}};",
       "pluginSpecifiedTemplates": [
         {
           "value": true
@@ -35,7 +35,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "Grade_table.selectedRow.Grade",
+      "grade_table.selectedRow.Grade",
       "update_Grade.fieldState.Grade.isVisible ? update_Grade.formData.Grade : update_Grade.sourceData.Grade",
       "update_Grade.fieldState.Notes.isVisible ? update_Grade.formData.Notes : update_Grade.sourceData.Notes"
     ],

@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "UPDATE Supplier SET\n\t\tSupplier = '{{update_Supplier.fieldState.Supplier.isVisible ? update_Supplier.formData.Supplier : update_Supplier.sourceData.Supplier}}',\n\t\tNotes = '{{update_Supplier.fieldState.Notes.isVisible ? update_Supplier.formData.Notes : update_Supplier.sourceData.Notes}}'\nWHERE Supplier = {{Supplier_table.selectedRow.Supplier}};\n\nUPDATE Invalid_WeighBridge SET\n\t\tSupplier = '{{update_Supplier.formData.Supplier}}'\nWHERE Supplier = {{Supplier_table.selectedRow.Supplier}};",
+      "body": "UPDATE Supplier SET\n\t\tSupplier = '{{update_supplier.fieldState.Supplier.isVisible ? update_supplier.formData.Supplier : update_supplier.sourceData.Supplier}}',\n\t\tNotes = '{{update_supplier.fieldState.Notes.isVisible ? update_supplier.formData.Notes : update_supplier.sourceData.Notes}}'\nWHERE Supplier = {{Supplier_table.selectedRow.Supplier}};\n\nUPDATE Invalid_WeighBridge SET\n\t\tSupplier = '{{update_supplier.formData.Supplier}}'\nWHERE Supplier = {{Supplier_table.selectedRow.Supplier}};",
       "pluginSpecifiedTemplates": [
         {
           "value": true
@@ -36,9 +36,9 @@
     "messages": [],
     "jsonPathKeys": [
       "Supplier_table.selectedRow.Supplier",
-      "update_Supplier.fieldState.Notes.isVisible ? update_Supplier.formData.Notes : update_Supplier.sourceData.Notes",
-      "update_Supplier.fieldState.Supplier.isVisible ? update_Supplier.formData.Supplier : update_Supplier.sourceData.Supplier",
-      "update_Supplier.formData.Supplier"
+      "update_supplier.fieldState.Notes.isVisible ? update_supplier.formData.Notes : update_supplier.sourceData.Notes",
+      "update_supplier.fieldState.Supplier.isVisible ? update_supplier.formData.Supplier : update_supplier.sourceData.Supplier",
+      "update_supplier.formData.Supplier"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

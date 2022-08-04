@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "mysql-plugin",
   "unpublishedAction": {
-    "name": "CoupeInsertQuery",
+    "name": "ILogs",
     "datasource": {
       "name": "Log Base",
       "pluginId": "mysql-plugin",
@@ -13,37 +13,30 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "WeighBridge",
+    "pageId": "Scaling",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "INSERT INTO Coupe (\n\tCoupe,\n\tDate_Added)\nVALUES (\n\t'{{new_coupe.formData.Coupe}}',\n\t'{{new Date().toISOString().split('T')[0]}}');",
+      "body": "SELECT Log FROM Invalid_Scaling;",
       "pluginSpecifiedTemplates": [
         {
           "value": true
         }
       ]
     },
-    "executeOnLoad": false,
-    "dynamicBindingPathList": [
-      {
-        "key": "body"
-      }
-    ],
+    "executeOnLoad": true,
+    "dynamicBindingPathList": [],
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "jsonPathKeys": [
-      "new Date().toISOString().split('T')[0]",
-      "new_coupe.formData.Coupe"
-    ],
-    "userSetOnLoad": false,
+    "jsonPathKeys": [],
+    "userSetOnLoad": true,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "WeighBridge_CoupeInsertQuery",
+  "id": "Scaling_ILogs",
   "deleted": false,
-  "gitSyncId": "62c64eab5a06d81bded2fac9_62e0dfcd5a06d81bded2ff5a"
+  "gitSyncId": "62c64eab5a06d81bded2fac9_62eb2fe92016620997b7fa93"
 }

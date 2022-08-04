@@ -21,7 +21,7 @@
       "body": "UPDATE WeighBridge\nSET Coupe = '{{MergeAndDeleteCoupe.data.CoupeSelect}}'\nWHERE Coupe = '{{Coupe_table.selectedRow.Coupe}}';\n\nUPDATE Invalid_WeighBridge\nSET Coupe = '{{MergeAndDeleteCoupe.data.CoupeSelect}}'\nWHERE Coupe = '{{Coupe_table.selectedRow.Coupe}}';\n\nDELETE FROM Coupe WHERE Coupe = '{{Coupe_table.selectedRow.Coupe}}';",
       "pluginSpecifiedTemplates": [
         {
-          "value": true
+          "value": false
         }
       ]
     },

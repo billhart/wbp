@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "UPDATE FPP SET\n\t\tFPP = '{{update_FPP.fieldState.FPP.isVisible ? update_FPP.formData.FPP : update_FPP.sourceData.FPP}}',\n\t\tExpiry = '{{update_FPP.fieldState.Date_Added.isVisible ? update_FPP.formData.Date_Added : update_FPP.sourceData.Date_Added}}'\nWHERE FPP = {{FPP_table.selectedRow.FPP}};\n\nUPDATE Invalid_WeighBridge SET\n\t\tFPP = '{{update_FPP.formData.FPP}}'\nWHERE FPP = {{FPP_table.selectedRow.FPP}};",
+      "body": "UPDATE FPP SET\n\t\tFPP = '{{update_FPP.fieldState.FPP.isVisible ? update_FPP.formData.FPP : update_FPP.sourceData.FPP}}',\n\t\tExpiry = '{{update_FPP.fieldState.Expiry.isVisible ? update_FPP.formData.Expiry : update_FPP.sourceData.Expiry}}'\nWHERE FPP = {{FPP_table.selectedRow.FPP}};\n\nUPDATE Invalid_WeighBridge SET\n\t\tFPP = '{{update_FPP.formData.FPP}}'\nWHERE FPP = {{FPP_table.selectedRow.FPP}};",
       "pluginSpecifiedTemplates": [
         {
           "value": true
@@ -36,7 +36,7 @@
     "messages": [],
     "jsonPathKeys": [
       "FPP_table.selectedRow.FPP",
-      "update_FPP.fieldState.Date_Added.isVisible ? update_FPP.formData.Date_Added : update_FPP.sourceData.Date_Added",
+      "update_FPP.fieldState.Expiry.isVisible ? update_FPP.formData.Expiry : update_FPP.sourceData.Expiry",
       "update_FPP.fieldState.FPP.isVisible ? update_FPP.formData.FPP : update_FPP.sourceData.FPP",
       "update_FPP.formData.FPP"
     ],

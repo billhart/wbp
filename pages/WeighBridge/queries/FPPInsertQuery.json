@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "INSERT INTO FPP (\n\tFPP,\n\tNotes)\nVALUES (\n\t'{{new_FPP.formData.FPP}}',\n\t'{{new Date().toISOString().split('T')[0]}}');",
+      "body": "INSERT INTO FPP (\n\tFPP,\n\tExpiry)\nVALUES (\n\t'{{new_FPP.formData.FPP}}',\n\t'{{new_FPP.formData.Expiry.split('T')[0]}}');",
       "pluginSpecifiedTemplates": [
         {
           "value": true
@@ -35,7 +35,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "new Date().toISOString().split('T')[0]",
+      "new_FPP.formData.Expiry.split('T')[0]",
       "new_FPP.formData.FPP"
     ],
     "userSetOnLoad": false,
