@@ -1732,7 +1732,7 @@
                                   "isCellVisible": true,
                                   "isDerived": false,
                                   "label": "Length",
-                                  "computedValue": "{{invalid_table.sanitizedTableData.map((currentRow) => ( currentRow.Length))}}",
+                                  "computedValue": "{{invalid_table.sanitizedTableData.map((currentRow) => ( currentRow.Length.toString()))}}",
                                   "cellBackground": ""
                                 },
                                 "Diameter": {
@@ -2086,7 +2086,7 @@
                                       "type": "SELECT_WIDGET",
                                       "serverSideFiltering": false,
                                       "hideCard": false,
-                                      "defaultOptionValue": "{{Dockets.data[0].Docket}}",
+                                      "defaultOptionValue": "{{Dockets.data[0].Docket.toString()}}",
                                       "animateLoading": true,
                                       "parentColumnSpace": 4.022361755371094,
                                       "dynamicTriggerPathList": [],
@@ -2106,7 +2106,7 @@
                                         }
                                       ],
                                       "labelPosition": "Left",
-                                      "options": "{{Dockets.data.map((row)=> {return {label: row.Docket, value:row.Docket}})}}",
+                                      "options": "{{Dockets.data.map((row)=> {return {label: row.Docket.toString(), value:row.Docket.toString()}})}}",
                                       "labelStyle": "BOLD",
                                       "placeholderText": "Select option",
                                       "isDisabled": false,
@@ -2263,7 +2263,7 @@
                                     "Length": {
                                       "children": {},
                                       "dataType": "string",
-                                      "defaultValue": "{{((sourceData, formData, fieldState) => (invalid_table.selectedRow.Length))(invalid_scaling_update.sourceData, invalid_scaling_update.formData, invalid_scaling_update.fieldState)}}",
+                                      "defaultValue": "{{((sourceData, formData, fieldState) => (invalid_table.selectedRow.Length.toString()))(invalid_scaling_update.sourceData, invalid_scaling_update.formData, invalid_scaling_update.fieldState)}}",
                                       "fieldType": "Select",
                                       "sourceData": "5.2",
                                       "isCustomField": false,
@@ -2281,7 +2281,7 @@
                                       "label": "Length",
                                       "labelTextSize": "0.875rem",
                                       "serverSideFiltering": false,
-                                      "options": "{{Lengths.data.map((row)=> { return { label: row.Lengths, value: row.Lengths }})}}"
+                                      "options": "{{Lengths.data.map((row)=> { return { label: row.Lengths.toString(), value: row.Lengths.toString() }})}}"
                                     },
                                     "Diameter": {
                                       "children": {},
@@ -4090,7 +4090,7 @@
                             "Length": {
                               "children": {},
                               "dataType": "string",
-                              "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.Length))(valid_scaling_update.sourceData, valid_scaling_update.formData, valid_scaling_update.fieldState)}}",
+                              "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.Length.toString()))(valid_scaling_update.sourceData, valid_scaling_update.formData, valid_scaling_update.fieldState)}}",
                               "fieldType": "Select",
                               "sourceData": "5.8",
                               "isCustomField": false,
@@ -4108,7 +4108,7 @@
                               "label": "Length",
                               "labelTextSize": "0.875rem",
                               "serverSideFiltering": false,
-                              "options": "{{Lengths.data.map((row)=> { return { label: row.Lengths, value: row.Lengths }})}}"
+                              "options": "{{Lengths.data.map((row)=> { return { label: row.Lengths.toString(), value: row.Lengths.toString() }})}}"
                             },
                             "Diameter": {
                               "children": {},
@@ -6436,8 +6436,8 @@
                           "position": -1,
                           "originalIdentifier": "__root_schema__",
                           "boxShadow": "none",
-                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                          "cellBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(new_location.sourceData, new_location.formData, new_location.fieldState)}}",
+                          "cellBorderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(new_location.sourceData, new_location.formData, new_location.fieldState)}}",
                           "cellBoxShadow": "none",
                           "isDisabled": false,
                           "isRequired": false,
@@ -6768,8 +6768,8 @@
                           "position": -1,
                           "originalIdentifier": "__root_schema__",
                           "boxShadow": "none",
-                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                          "cellBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(update_location.sourceData, update_location.formData, update_location.fieldState)}}",
+                          "cellBorderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(update_location.sourceData, update_location.formData, update_location.fieldState)}}",
                           "cellBoxShadow": "none",
                           "isDisabled": false,
                           "isRequired": false,
