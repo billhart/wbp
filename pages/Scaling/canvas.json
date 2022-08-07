@@ -3411,7 +3411,7 @@
                     {
                       "boxShadow": "none",
                       "widgetName": "Button1Copy",
-                      "onClick": "{{Parse_Raw_Scaling.parse_data().then(() => Count_Scaling.run())}",
+                      "onClick": "{{Parse_Raw_Scaling.parse_data().then(() => Count_Scaling.run()}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                       "dynamicPropertyPathList": [
                         {
