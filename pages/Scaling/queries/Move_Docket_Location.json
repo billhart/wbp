@@ -15,7 +15,7 @@
     },
     "pageId": "Scaling",
     "actionConfiguration": {
-      "timeoutInMillisecond": 10000,
+      "timeoutInMillisecond": 60000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "UPDATE Scaling SET\n\t\tLocation = '{{SelectLocation.selectedOptionValue}}',\nWHERE Docket = '{{docket_location.selectedRow.Docket}}';\n\nUPDATE Invalid_Scaling SET\n\t\tLocation = '{{SelectLocation.selectedOptionValue}}',\nWHERE Docket = '{{docket_location.selectedRow.Docket}}';",

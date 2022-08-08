@@ -15,7 +15,7 @@
     },
     "pageId": "Scaling",
     "actionConfiguration": {
-      "timeoutInMillisecond": 10000,
+      "timeoutInMillisecond": 60000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "INSERT INTO Yard_Location (Location,Notes,Date_Added)\n  VALUES\t{{this.params.data}};",

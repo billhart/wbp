@@ -15,7 +15,7 @@
     },
     "pageId": "Scaling",
     "actionConfiguration": {
-      "timeoutInMillisecond": 10000,
+      "timeoutInMillisecond": 60000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "DELETE FROM Scaling;\nDELETE FROM Invalid_Scaling;\nDELETE FROM Reject_Scaling;-- Specify a valid condition here. Removing the condition may delete everything in the table!",

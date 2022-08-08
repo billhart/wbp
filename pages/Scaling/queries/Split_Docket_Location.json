@@ -15,7 +15,7 @@
     },
     "pageId": "Scaling",
     "actionConfiguration": {
-      "timeoutInMillisecond": 10000,
+      "timeoutInMillisecond": 60000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "UPDATE Scaling SET\n\t\tLocation = '{{SelectSplitLocation.selectedOptionValue}}'\nWHERE Log IN ({{pack_split.selectedRows.map(row => `'${row.Log}'`).toString()}});\n\n",

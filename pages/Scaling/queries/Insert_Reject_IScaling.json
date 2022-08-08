@@ -15,7 +15,7 @@
     },
     "pageId": "Scaling",
     "actionConfiguration": {
-      "timeoutInMillisecond": 10000,
+      "timeoutInMillisecond": 60000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "INSERT INTO Reject_Scaling \n\t(Log,Docket,Grade,Length,Diameter,JAS,Date,Reason)\n  VALUES\n\t\t('{{invalid_table.selectedRow.Log}}',\n\t\t'{{invalid_table.selectedRow.Docket}}',\n\t\t'{{invalid_table.selectedRow.Grade}}',\n\t\t'{{invalid_table.selectedRow.Length}}',\n\t\t'{{invalid_table.selectedRow.Diameter}}',\n\t\t'{{invalid_table.selectedRow.JAS}}',\n\t\t'{{invalid_table.selectedRow.Date}}',\n\t\t'{{invalid_table.selectedRow.Reason}}');\n\t\t\nDELETE FROM Invalid_Scaling WHERE Log = '{{invalid_table.selectedRow.Log}}';",

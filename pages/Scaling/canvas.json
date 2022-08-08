@@ -8791,7 +8791,7 @@
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
+              "timeoutInMillisecond": 60000
             },
             {
               "id": "Scaling_Lengths",
@@ -8799,7 +8799,7 @@
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
+              "timeoutInMillisecond": 60000
             },
             {
               "id": "Scaling_RLogs",
@@ -8807,7 +8807,7 @@
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
+              "timeoutInMillisecond": 60000
             }
           ],
           [
@@ -8817,7 +8817,7 @@
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
+              "timeoutInMillisecond": 60000
             },
             {
               "id": "Scaling_Invalid_Dockets",
@@ -8825,7 +8825,7 @@
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
+              "timeoutInMillisecond": 60000
             },
             {
               "id": "Scaling_LocationAll",
@@ -8833,7 +8833,7 @@
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
+              "timeoutInMillisecond": 60000
             },
             {
               "id": "Scaling_Reject_Select",
@@ -8847,7 +8847,7 @@
                 "reject_data_table.searchText || \"\"",
                 "reject_data_table.sortOrder.column || 'Log'"
               ],
-              "timeoutInMillisecond": 10000
+              "timeoutInMillisecond": 60000
             }
           ],
           [
@@ -8863,7 +8863,7 @@
                 "(invalid_table.pageNo - 1) * invalid_table.pageSize",
                 "invalid_table.searchText || \"\""
               ],
-              "timeoutInMillisecond": 10000
+              "timeoutInMillisecond": 60000
             }
           ],
           [
@@ -8873,7 +8873,7 @@
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
+              "timeoutInMillisecond": 60000
             },
             {
               "id": "Scaling_SelectDocketLogs",
@@ -8884,7 +8884,7 @@
                 "docket_location.selectedRow.Location",
                 "docket_location.selectedRow.Docket"
               ],
-              "timeoutInMillisecond": 10000
+              "timeoutInMillisecond": 60000
             },
             {
               "id": "Scaling_VScaling",
@@ -8898,7 +8898,7 @@
                 "valid_table.searchText || \"\"",
                 "valid_table.sortOrder.column || 'Log'"
               ],
-              "timeoutInMillisecond": 10000
+              "timeoutInMillisecond": 60000
             }
           ],
           [
@@ -8908,7 +8908,7 @@
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
+              "timeoutInMillisecond": 60000
             },
             {
               "id": "Scaling_Location",
@@ -8916,7 +8916,7 @@
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
+              "timeoutInMillisecond": 60000
             }
           ],
           [
@@ -8926,7 +8926,7 @@
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
+              "timeoutInMillisecond": 60000
             }
           ],
           [
@@ -8936,7 +8936,7 @@
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
+              "timeoutInMillisecond": 60000
             }
           ]
         ],

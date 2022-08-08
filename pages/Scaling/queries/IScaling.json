@@ -15,7 +15,7 @@
     },
     "pageId": "Scaling",
     "actionConfiguration": {
-      "timeoutInMillisecond": 10000,
+      "timeoutInMillisecond": 60000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "SELECT * FROM Invalid_Scaling\nWHERE (Location like '%{{invalid_table.searchText || \"\"}}%' AND Reason NOT LIKE '%Docket Not Found%')\nORDER BY {{invalid_table.sortOrder.column || 'Log'}} {{invalid_table.sortOrder.order || \"DESC\"}}, Date DESC\nLIMIT {{invalid_table.pageSize}}\nOFFSET {{(invalid_table.pageNo - 1) * invalid_table.pageSize}};",

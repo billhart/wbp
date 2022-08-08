@@ -15,7 +15,7 @@
     },
     "pageId": "Scaling",
     "actionConfiguration": {
-      "timeoutInMillisecond": 10000,
+      "timeoutInMillisecond": 60000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "INSERT INTO Invalid_Scaling (\n\tLog,\n\tLocation,\n\tDocket,\n\tGrade,\n\tLength,\n\tDiameter,\n\tJAS,\n\tDate,\n\tReason)\nVALUES (\n\t'{{insert_form.formData.Log}}',\n\t'{{insert_form.formData.Location}}',\n\t'{{insert_form.formData.Docket}}',\n\t'{{insert_form.formData.Grade}}',\n\t'{{insert_form.formData.Length}}',\n\t'{{insert_form.formData.Diameter}}',\n\t'{{insert_form.formData.JAS}}',\n\t'{{insert_form.formData.Date}}',\n\t'{{insert_form.formData.Reason}}');",
@@ -26,6 +26,7 @@
       ]
     },
     "executeOnLoad": false,
+    "dynamicBindingPathList": [],
     "isValid": true,
     "invalids": [],
     "messages": [],
