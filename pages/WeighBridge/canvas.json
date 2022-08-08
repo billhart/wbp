@@ -16139,7 +16139,7 @@
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
+              "timeoutInMillisecond": 60000
             },
             {
               "id": "WeighBridge_FPPAll",
@@ -16147,7 +16147,7 @@
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
+              "timeoutInMillisecond": 60000
             },
             {
               "id": "WeighBridge_GradeAll",
@@ -16155,7 +16155,7 @@
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
+              "timeoutInMillisecond": 60000
             },
             {
               "id": "WeighBridge_HarvestorAll",
@@ -16163,7 +16163,7 @@
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
+              "timeoutInMillisecond": 60000
             },
             {
               "id": "WeighBridge_LengthsAll",
@@ -16171,7 +16171,7 @@
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
+              "timeoutInMillisecond": 60000
             },
             {
               "id": "WeighBridge_OperationsAll",
@@ -16179,7 +16179,7 @@
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
+              "timeoutInMillisecond": 60000
             },
             {
               "id": "WeighBridge_SupplierAll",
@@ -16187,7 +16187,7 @@
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
+              "timeoutInMillisecond": 60000
             }
           ],
           [
@@ -16197,7 +16197,7 @@
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
+              "timeoutInMillisecond": 60000
             },
             {
               "id": "WeighBridge_IW_Select",
@@ -16209,7 +16209,7 @@
                 "iw_data_table.sortOrder.column || 'WB_Docket'",
                 "iw_data_table.sortOrder.order || \"DESC\""
               ],
-              "timeoutInMillisecond": 10000
+              "timeoutInMillisecond": 60000
             }
           ],
           [
@@ -16219,7 +16219,7 @@
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
+              "timeoutInMillisecond": 60000
             },
             {
               "id": "WeighBridge_WB_Select",
@@ -16233,7 +16233,7 @@
                 "wb_data_table.pageSize",
                 "wb_data_table.searchText || \"\""
               ],
-              "timeoutInMillisecond": 10000
+              "timeoutInMillisecond": 60000
             }
           ],
           [
@@ -16243,7 +16243,7 @@
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
+              "timeoutInMillisecond": 60000
             },
             {
               "id": "WeighBridge_FPP",
@@ -16251,7 +16251,7 @@
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
+              "timeoutInMillisecond": 60000
             },
             {
               "id": "WeighBridge_Grade",
@@ -16259,7 +16259,7 @@
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
+              "timeoutInMillisecond": 60000
             },
             {
               "id": "WeighBridge_Harvestor",
@@ -16267,7 +16267,7 @@
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
+              "timeoutInMillisecond": 60000
             },
             {
               "id": "WeighBridge_Lengths",
@@ -16275,7 +16275,7 @@
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
+              "timeoutInMillisecond": 60000
             },
             {
               "id": "WeighBridge_Operations",
@@ -16283,7 +16283,7 @@
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
+              "timeoutInMillisecond": 60000
             },
             {
               "id": "WeighBridge_Supplier",
@@ -16291,7 +16291,7 @@
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
+              "timeoutInMillisecond": 60000
             }
           ]
         ],

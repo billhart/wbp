@@ -15,7 +15,7 @@
     },
     "pageId": "WeighBridge",
     "actionConfiguration": {
-      "timeoutInMillisecond": 10000,
+      "timeoutInMillisecond": 60000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "UPDATE Supplier SET\n\t\tSupplier = '{{update_supplier.fieldState.Supplier.isVisible ? update_supplier.formData.Supplier : update_supplier.sourceData.Supplier}}',\n\t\tNotes = '{{update_supplier.fieldState.Notes.isVisible ? update_supplier.formData.Notes : update_supplier.sourceData.Notes}}'\nWHERE Supplier = {{Supplier_table.selectedRow.Supplier}};\n\nUPDATE Invalid_WeighBridge SET\n\t\tSupplier = '{{update_supplier.formData.Supplier}}'\nWHERE Supplier = {{Supplier_table.selectedRow.Supplier}};",

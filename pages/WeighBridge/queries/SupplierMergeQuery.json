@@ -15,7 +15,7 @@
     },
     "pageId": "WeighBridge",
     "actionConfiguration": {
-      "timeoutInMillisecond": 10000,
+      "timeoutInMillisecond": 60000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "UPDATE WeighBridge\nSET Supplier = '{{MergeAndDeleteSupplier.data.SupplierSelect}}'\nWHERE Supplier = '{{Supplier_table.selectedRow.Supplier}}';\n\nUPDATE Invalid_WeighBridge\nSET Supplier = '{{MergeAndDeleteSupplier.data.SupplierSelect}}'\nWHERE Supplier = '{{Supplier_table.selectedRow.Supplier}}';\n\nDELETE FROM Supplier WHERE Supplier = '{{Supplier_table.selectedRow.Supplier}}';",

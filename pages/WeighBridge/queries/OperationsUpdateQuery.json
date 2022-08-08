@@ -15,7 +15,7 @@
     },
     "pageId": "WeighBridge",
     "actionConfiguration": {
-      "timeoutInMillisecond": 10000,
+      "timeoutInMillisecond": 60000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "UPDATE Operations SET\n\t\tOperations = '{{update_operations.fieldState.Operations.isVisible ? update_operations.formData.Operations : update_operations.sourceData.Operations}}',\n\t\tDate_Added = '{{update_operations.fieldState.Date_Added.isVisible ? update_operations.formData.Date_Added : update_operations.sourceData.Date_Added}}'\nWHERE Operations = {{Operations_table.selectedRow.Operations}};\n\nUPDATE Invalid_WeighBridge SET\n\t\tOperations = '{{update_operations.formData.Operations}}'\nWHERE Operations = {{Operations_table.selectedRow.Operations}};",

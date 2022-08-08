@@ -15,7 +15,7 @@
     },
     "pageId": "WeighBridge",
     "actionConfiguration": {
-      "timeoutInMillisecond": 10000,
+      "timeoutInMillisecond": 60000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "DELETE FROM Coupe\n  WHERE Coupe IN ({{Coupe_table.selectedRows.map(row => `'${row.Coupe}'`).toString()}});",

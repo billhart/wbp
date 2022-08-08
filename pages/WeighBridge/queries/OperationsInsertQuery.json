@@ -15,7 +15,7 @@
     },
     "pageId": "WeighBridge",
     "actionConfiguration": {
-      "timeoutInMillisecond": 10000,
+      "timeoutInMillisecond": 60000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "INSERT INTO Operations (\n\tOperations,\n\tDate_Added)\nVALUES (\n\t'{{new_operation.formData.Operations}}',\n\t'{{new Date().toISOString().split('T')[0]}}');",

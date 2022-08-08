@@ -15,7 +15,7 @@
     },
     "pageId": "WeighBridge",
     "actionConfiguration": {
-      "timeoutInMillisecond": 10000,
+      "timeoutInMillisecond": 60000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "UPDATE WeighBridge\nSET Coupe = '{{MergeAndDeleteCoupe.data.CoupeSelect}}'\nWHERE Coupe = '{{Coupe_table.selectedRow.Coupe}}';\n\nUPDATE Invalid_WeighBridge\nSET Coupe = '{{MergeAndDeleteCoupe.data.CoupeSelect}}'\nWHERE Coupe = '{{Coupe_table.selectedRow.Coupe}}';\n\nDELETE FROM Coupe WHERE Coupe = '{{Coupe_table.selectedRow.Coupe}}';",

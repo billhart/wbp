@@ -15,7 +15,7 @@
     },
     "pageId": "WeighBridge",
     "actionConfiguration": {
-      "timeoutInMillisecond": 10000,
+      "timeoutInMillisecond": 60000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "INSERT INTO FPP (\n\tFPP,\n\tExpiry)\nVALUES (\n\t'{{new_FPP.formData.FPP}}',\n\t'{{new_FPP.formData.Expiry.split('T')[0]}}');",

@@ -15,7 +15,7 @@
     },
     "pageId": "WeighBridge",
     "actionConfiguration": {
-      "timeoutInMillisecond": 10000,
+      "timeoutInMillisecond": 60000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "UPDATE Coupe SET\n\t\tCoupe = '{{update_coupe.fieldState.Coupe.isVisible ? update_coupe.formData.Coupe : update_coupe.sourceData.Coupe}}',\n\t\tDate_Added = '{{update_coupe.fieldState.Date_Added.isVisible ? update_coupe.formData.Date_Added : update_coupe.sourceData.Date_Added}}'\nWHERE Coupe = {{Coupe_table.selectedRow.Coupe}};\n\nUPDATE Invalid_WeighBridge SET\n\t\tCoupe = '{{update_coupe.formData.Coupe}}'\nWHERE Coupe = {{Coupe_table.selectedRow.Coupe}};",

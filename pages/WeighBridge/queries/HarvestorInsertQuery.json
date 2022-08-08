@@ -15,7 +15,7 @@
     },
     "pageId": "WeighBridge",
     "actionConfiguration": {
-      "timeoutInMillisecond": 10000,
+      "timeoutInMillisecond": 60000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "INSERT INTO Harvestor (\n\tHarvestor,\n\tNotes)\nVALUES (\n\t'{{new_harvestor.formData.Harvestor}}',\n\t'{{new_harvestor.formData.Notes}}');",

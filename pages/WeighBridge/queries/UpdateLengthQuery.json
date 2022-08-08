@@ -15,7 +15,7 @@
     },
     "pageId": "WeighBridge",
     "actionConfiguration": {
-      "timeoutInMillisecond": 10000,
+      "timeoutInMillisecond": 60000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "UPDATE Lengths SET\n\t\tLengths = '{{update_Length.fieldState.Lengths.isVisible ? update_Length.formData.Lengths : update_Length.sourceData.Lengths}}',\n\t\tNotes = '{{update_Length.fieldState.Notes.isVisible ? update_Length.formData.Notes : update_Length.sourceData.Notes}}'\nWHERE Lengths = {{length_table.selectedRow.Lengths}};",
