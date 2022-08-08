@@ -1875,7 +1875,7 @@
                               ],
                               "text": "Invalid Log Table",
                               "labelTextSize": "0.875rem",
-                              "rightColumn": 22,
+                              "rightColumn": 18,
                               "textAlign": "LEFT",
                               "widgetId": "urzv99hdc8",
                               "isVisible": "true",
@@ -1965,7 +1965,7 @@
                                       "text": "Change Missing Docket:",
                                       "key": "c65oz6lv2j",
                                       "isDeprecated": false,
-                                      "rightColumn": 15,
+                                      "rightColumn": 18,
                                       "textAlign": "LEFT",
                                       "widgetId": "xdu6lw98ss",
                                       "isVisible": true,
@@ -1988,6 +1988,7 @@
                                       "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
                                       "topRow": 0,
                                       "bottomRow": 4,
+                                      "tooltip": "Remember to Validate all changes",
                                       "type": "FORM_BUTTON_WIDGET",
                                       "hideCard": true,
                                       "animateLoading": true,
@@ -1996,7 +1997,7 @@
                                           "key": "onClick"
                                         }
                                       ],
-                                      "leftColumn": 38,
+                                      "leftColumn": 49,
                                       "dynamicBindingPathList": [
                                         {
                                           "key": "buttonColor"
@@ -2008,7 +2009,7 @@
                                       "text": "Update Dockets",
                                       "key": "y8urcidzlf",
                                       "isDeprecated": false,
-                                      "rightColumn": 48,
+                                      "rightColumn": 64,
                                       "isDefaultClickDisabled": true,
                                       "widgetId": "w9q3ej2sxq",
                                       "isVisible": true,
@@ -2039,7 +2040,7 @@
                                       "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
                                       "parentColumnSpace": 4.022361755371094,
                                       "dynamicTriggerPathList": [],
-                                      "leftColumn": 15,
+                                      "leftColumn": 18,
                                       "dynamicBindingPathList": [
                                         {
                                           "key": "fontFamily"
@@ -2056,7 +2057,7 @@
                                       "text": "{{docket_table.selectedRow.Docket}}",
                                       "key": "c65oz6lv2j",
                                       "isDeprecated": false,
-                                      "rightColumn": 21,
+                                      "rightColumn": 29,
                                       "textAlign": "LEFT",
                                       "widgetId": "wkubvkvr19",
                                       "isVisible": true,
@@ -2090,7 +2091,7 @@
                                       "animateLoading": true,
                                       "parentColumnSpace": 4.022361755371094,
                                       "dynamicTriggerPathList": [],
-                                      "leftColumn": 21,
+                                      "leftColumn": 29,
                                       "dynamicBindingPathList": [
                                         {
                                           "key": "accentColor"
@@ -2114,7 +2115,7 @@
                                       "labelTextSize": "1rem",
                                       "isRequired": false,
                                       "isDeprecated": false,
-                                      "rightColumn": 37,
+                                      "rightColumn": 49,
                                       "widgetId": "nnndyu3l4h",
                                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                                       "isVisible": true,
@@ -2124,61 +2125,6 @@
                                       "renderMode": "CANVAS",
                                       "isLoading": false,
                                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
-                                    },
-                                    {
-                                      "boxShadow": "none",
-                                      "widgetName": "Button3",
-                                      "onClick": "{{Parse_Invalid_Scaling.parse_data()}}",
-                                      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-                                      "dynamicPropertyPathList": [
-                                        {
-                                          "key": "onClick"
-                                        }
-                                      ],
-                                      "displayName": "Button",
-                                      "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
-                                      "searchTags": [
-                                        "click",
-                                        "submit"
-                                      ],
-                                      "topRow": 0,
-                                      "bottomRow": 4,
-                                      "tooltip": "Checks invalid entries and if now ok moved to valid",
-                                      "parentRowSpace": 10,
-                                      "type": "BUTTON_WIDGET",
-                                      "hideCard": false,
-                                      "animateLoading": true,
-                                      "parentColumnSpace": 27.625,
-                                      "dynamicTriggerPathList": [
-                                        {
-                                          "key": "onClick"
-                                        }
-                                      ],
-                                      "leftColumn": 49,
-                                      "dynamicBindingPathList": [
-                                        {
-                                          "key": "buttonColor"
-                                        },
-                                        {
-                                          "key": "borderRadius"
-                                        }
-                                      ],
-                                      "text": "Validate Changes",
-                                      "isDisabled": false,
-                                      "key": "e6gyb8xyl3",
-                                      "isDeprecated": false,
-                                      "rightColumn": 64,
-                                      "isDefaultClickDisabled": true,
-                                      "widgetId": "gvrpoo84h4",
-                                      "isVisible": true,
-                                      "recaptchaType": "V3",
-                                      "version": 1,
-                                      "parentId": "o8ql6qs498",
-                                      "renderMode": "CANVAS",
-                                      "isLoading": false,
-                                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                                      "buttonVariant": "PRIMARY",
-                                      "placement": "CENTER"
                                     }
                                   ],
                                   "key": "fctz9adlwi",
@@ -2199,7 +2145,7 @@
                               "key": "x0a7l5qk9p",
                               "backgroundColor": "#FFFFFF",
                               "isDeprecated": false,
-                              "rightColumn": 37,
+                              "rightColumn": 27,
                               "widgetId": "v7qypti12c",
                               "isVisible": true,
                               "parentId": "59rw5mx0bq",
@@ -2304,7 +2250,10 @@
                                       "isVisible": true,
                                       "labelTextSize": "0.875rem",
                                       "label": "Diameter",
-                                      "validation": "{{((sourceData, formData, fieldState) => (formData.Diameter > 14 && formData.Diameter < 50))(invalid_scaling_update.sourceData, invalid_scaling_update.formData, invalid_scaling_update.fieldState)}}"
+                                      "validation": "{{((sourceData, formData, fieldState) => (formData.Diameter > 2 && formData.Diameter < 100))(invalid_scaling_update.sourceData, invalid_scaling_update.formData, invalid_scaling_update.fieldState)}}",
+                                      "minNum": "2",
+                                      "maxNum": "100",
+                                      "errorMessage": "Outside expected range (2 - 100 cm)"
                                     },
                                     "JAS": {
                                       "children": {},
@@ -2906,6 +2855,63 @@
                               "isVisibleSearch": false,
                               "isVisiblePagination": false,
                               "verticalAlignment": "CENTER"
+                            },
+                            {
+                              "boxShadow": "none",
+                              "widgetName": "Button3",
+                              "onClick": "{{Parse_Invalid_Scaling.parse_data()}}",
+                              "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "onClick"
+                                }
+                              ],
+                              "displayName": "Button",
+                              "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
+                              "searchTags": [
+                                "click",
+                                "submit"
+                              ],
+                              "topRow": 6,
+                              "bottomRow": 10,
+                              "tooltip": "Checks invalid entries and if now ok moved to valid",
+                              "parentRowSpace": 10,
+                              "type": "BUTTON_WIDGET",
+                              "hideCard": false,
+                              "animateLoading": true,
+                              "parentColumnSpace": 27.625,
+                              "dynamicTriggerPathList": [
+                                {
+                                  "key": "onClick"
+                                }
+                              ],
+                              "leftColumn": 20,
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "buttonColor"
+                                },
+                                {
+                                  "key": "borderRadius"
+                                }
+                              ],
+                              "text": "Validate All Changes",
+                              "isDisabled": false,
+                              "key": "e6gyb8xyl3",
+                              "isDeprecated": false,
+                              "rightColumn": 28,
+                              "isDefaultClickDisabled": true,
+                              "iconName": "tick-circle",
+                              "widgetId": "gvrpoo84h4",
+                              "isVisible": true,
+                              "recaptchaType": "V3",
+                              "version": 1,
+                              "parentId": "59rw5mx0bq",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                              "buttonVariant": "PRIMARY",
+                              "iconAlign": "left",
+                              "placement": "CENTER"
                             }
                           ]
                         }
