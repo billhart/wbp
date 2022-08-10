@@ -3238,7 +3238,7 @@
                     {
                       "boxShadow": "none",
                       "widgetName": "Process_Raw",
-                      "onClick": "{{Parse_Raw_WeighBridge.parse_data()}}",
+                      "onClick": "{{Parse_Raw_WeighBridge.load_data()\n    .then(() => Parse_Raw_WeighBridge.parse_data()\n    .then(() => Parse_Raw_WeighBridge.reload_tables()\n    .then(() => Parse_Raw_WeighBridge.load_docketids())))}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                       "dynamicPropertyPathList": [
                         {
