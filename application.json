@@ -1,15 +1,23 @@
 {
   "pages": [
     {
-      "id": "WeighBridge",
+      "id": "Metrics",
       "isDefault": true
+    },
+    {
+      "id": "WeighBridge",
+      "isDefault": false
     },
     {
       "id": "Scaling",
       "isDefault": false
     },
     {
-      "id": "Receivals",
+      "id": "Shipping",
+      "isDefault": false
+    },
+    {
+      "id": "Page1",
       "isDefault": false
     }
   ],

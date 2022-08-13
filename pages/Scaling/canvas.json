@@ -4808,7 +4808,7 @@
                                   "key": "totalRecordsCount"
                                 },
                                 {
-                                  "key": "primaryColumns.Order.computedValue"
+                                  "key": "primaryColumns.Ordername.computedValue"
                                 }
                               ],
                               "leftColumn": 0,
@@ -4865,7 +4865,7 @@
                                 "JAS",
                                 "Location",
                                 "Date",
-                                "Order"
+                                "Ordername"
                               ],
                               "dynamicPropertyPathList": [
                                 {
@@ -5050,10 +5050,10 @@
                                   "computedValue": "{{valid_table.sanitizedTableData.map((currentRow) => ( currentRow.Date))}}",
                                   "cellBackground": ""
                                 },
-                                "Order": {
+                                "Ordername": {
                                   "index": 8,
                                   "width": 150,
-                                  "id": "Order",
+                                  "id": "Ordername",
                                   "horizontalAlignment": "LEFT",
                                   "verticalAlignment": "CENTER",
                                   "columnType": "text",
@@ -5065,8 +5065,8 @@
                                   "isDisabled": false,
                                   "isCellVisible": true,
                                   "isDerived": false,
-                                  "label": "Order",
-                                  "computedValue": "{{valid_table.sanitizedTableData.map((currentRow) => ( currentRow.Order))}}",
+                                  "label": "Ordername",
+                                  "computedValue": "{{valid_table.sanitizedTableData.map((currentRow) => ( currentRow.Ordername))}}",
                                   "cellBackground": ""
                                 }
                               },

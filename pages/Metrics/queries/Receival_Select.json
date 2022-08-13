@@ -13,7 +13,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Receivals",
+    "pageId": "Metrics",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -36,7 +36,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Receivals_Receival_Select",
+  "id": "Metrics_Receival_Select",
   "deleted": false,
   "gitSyncId": "62c64eab5a06d81bded2fac9_62e87cc65a06d81bded300c3"
 }

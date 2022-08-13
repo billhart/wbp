@@ -1,7 +1,7 @@
 {
   "unpublishedCollection": {
     "name": "settings",
-    "pageId": "Receivals",
+    "pageId": "Metrics",
     "pluginId": "js-plugin",
     "pluginType": "JS",
     "actions": [],
@@ -14,7 +14,7 @@
       }
     ]
   },
-  "id": "Receivals_settings",
+  "id": "Metrics_settings",
   "deleted": false,
   "gitSyncId": "62c64eab5a06d81bded2fac9_62e8b8bb5a06d81bded300dd"
 }
