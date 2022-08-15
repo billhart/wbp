@@ -908,7 +908,21 @@
                       "columnWidthMap": {
                         "task": 245,
                         "step": 62,
-                        "status": 75
+                        "status": 75,
+                        "Log": 116,
+                        "Docket": 108,
+                        "Grade": 85,
+                        "Length": 96,
+                        "Diameter": 105,
+                        "JAS": 103,
+                        "ShipDate": 116,
+                        "ScaleDate": 123,
+                        "Ordername": 113,
+                        "Vessel": 102,
+                        "Rego": 95,
+                        "Supplier": 98,
+                        "Operations": 116,
+                        "Coupe": 108
                       },
                       "parentRowSpace": 10,
                       "hideCard": false,
