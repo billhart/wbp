@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "mysql-plugin",
   "unpublishedAction": {
-    "name": "SelectOrderQuery",
+    "name": "MarkedShipped",
     "datasource": {
       "name": "Log Base",
       "pluginId": "mysql-plugin",
@@ -13,19 +13,19 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Page1",
+    "pageId": "Shipping",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT * FROM Orders\nWHERE (Ordername like '%{{order_table.searchText || \"\"}}%' OR ShipmentID like '%{{order_table.searchText || \"\"}}%') AND Ordername not like 'YARD'\nORDER BY {{order_table.sortOrder.column || 'Ordername'}} {{order_table.sortOrder.order || \"ASC\"}}\nLIMIT {{order_table.pageSize}}\nOFFSET {{(order_table.pageNo - 1) * order_table.pageSize}};",
+      "body": "UPDATE Orders \n\tSET Shipped = 1\nWHERE ShipmentID = {{SelectShipmentDispatch.selectedOptionValue}};\n\nUPDATE Shipment\n\tSET Shipped = 1\nWHERE ShipmentID = {{SelectShipmentDispatch.selectedOptionValue}};",
       "pluginSpecifiedTemplates": [
         {
           "value": false
         }
       ]
     },
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "dynamicBindingPathList": [
       {
         "key": "body"
@@ -35,18 +35,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "(order_table.pageNo - 1) * order_table.pageSize",
-      "order_table.pageSize",
-      "order_table.searchText || \"\"",
-      "order_table.sortOrder.column || 'Ordername'",
-      "order_table.sortOrder.order || \"ASC\""
+      "SelectShipmentDispatch.selectedOptionValue"
     ],
-    "userSetOnLoad": true,
+    "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Page1_SelectOrderQuery",
+  "id": "Shipping_MarkedShipped",
   "deleted": false,
-  "gitSyncId": "62c64eab5a06d81bded2fac9_62f35535624e841f0cc17f30"
+  "gitSyncId": "62c64eab5a06d81bded2fac9_62f9e0e8624e841f0cc1803b"
 }

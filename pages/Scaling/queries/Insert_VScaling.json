@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 60000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "INSERT INTO Scaling \n\t(Log,Docket,Grade,Length,Diameter,JAS,Location,Date)\n  VALUES\n\t\t{{this.params.data}};",
+      "body": "INSERT IGNORE INTO Scaling \n\t(Log,Docket,Grade,Length,Diameter,JAS,Location,Date)\n  VALUES\n\t\t{{this.params.data}};",
       "pluginSpecifiedTemplates": [
         {
           "value": false

@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 60000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "INSERT INTO WeighBridge (\n\tDocket,\n\tWB_Docket,\n\tDate,\n\tRego,\n\tSupplier,\n\tOperations,\n\tCoupe,\n\tHarvestor,\n\tFPP,\n\tGross,\n\tTare,\n\tGMT,\n\tGrade,\n\tLength\n)\nVALUES (\n\t'{{WB_Insert_Form.data.DocketVI.toString()}}',\n\t'{{WB_Insert_Form.data.WBDocketVI}}',\n\t'{{WB_Insert_Form.data.DateVI.split('T')[0]}}',\n\t'{{WB_Insert_Form.data.RegoVI}}',\n\t'{{WB_Insert_Form.data.SupplierVI}}',\n\t'{{WB_Insert_Form.data.OperationsVI}}',\n\t'{{WB_Insert_Form.data.CoupeVI}}',\n\t'{{WB_Insert_Form.data.HarvestorVI}}',\n\t'{{WB_Insert_Form.data.FPPVI}}',\n\t'{{WB_Insert_Form.data.GrossVI}}',\n\t'{{WB_Insert_Form.data.TareVI}}',\n\t'{{WB_Insert_Form.data.GMTVI}}',\n\t'{{WB_Insert_Form.data.GradeVI}}',\n\t'{{WB_Insert_Form.data.LengthVI}}'\n);",
+      "body": "INSERT IGNORE INTO WeighBridge (\n\tDocket,\n\tWB_Docket,\n\tDate,\n\tRego,\n\tSupplier,\n\tOperations,\n\tCoupe,\n\tHarvestor,\n\tFPP,\n\tGross,\n\tTare,\n\tGMT,\n\tGrade,\n\tLength\n)\nVALUES (\n\t'{{WB_Insert_Form.data.DocketVI.toString()}}',\n\t'{{WB_Insert_Form.data.WBDocketVI}}',\n\t'{{WB_Insert_Form.data.DateVI.split('T')[0]}}',\n\t'{{WB_Insert_Form.data.RegoVI}}',\n\t'{{WB_Insert_Form.data.SupplierVI}}',\n\t'{{WB_Insert_Form.data.OperationsVI}}',\n\t'{{WB_Insert_Form.data.CoupeVI}}',\n\t'{{WB_Insert_Form.data.HarvestorVI}}',\n\t'{{WB_Insert_Form.data.FPPVI}}',\n\t'{{WB_Insert_Form.data.GrossVI}}',\n\t'{{WB_Insert_Form.data.TareVI}}',\n\t'{{WB_Insert_Form.data.GMTVI}}',\n\t'{{WB_Insert_Form.data.GradeVI}}',\n\t'{{WB_Insert_Form.data.LengthVI}}'\n);",
       "pluginSpecifiedTemplates": [
         {
           "value": true

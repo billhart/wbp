@@ -21,7 +21,7 @@
       "body": "SELECT Location, \n\tGrade,\n\tCOUNT(Docket) as Pieces, \n\tSUM(JAS) as TJAS \n\tFROM Scaling WHERE Ordername = '{{Orders.selectedItem.Ordername}}' GROUP BY Location, Grade ORDER BY Location;",
       "pluginSpecifiedTemplates": [
         {
-          "value": true
+          "value": false
         }
       ]
     },

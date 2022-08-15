@@ -21,7 +21,7 @@
       "body": "UPDATE Scaling\n  SET Ordername = 'YARD'\n  WHERE Location IN ({{LocTableCopy.selectedRows.map(row => `'${row.Location}'`).toString()}}) AND Grade = '{{appsmith.store.Product}}' AND Ordername = '{{Orders.selectedItem.Ordername}}';\n\t\n\t\n",
       "pluginSpecifiedTemplates": [
         {
-          "value": true
+          "value": false
         }
       ]
     },

@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "mysql-plugin",
   "unpublishedAction": {
-    "name": "Add_Log_Query",
+    "name": "SelectShipmentSummaryTotal",
     "datasource": {
       "name": "Log Base",
       "pluginId": "mysql-plugin",
@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "UPDATE Scaling\n  SET Ordername = '{{Orders.selectedItem.Ordername}}'\n  WHERE Log IN ({{LogTable.selectedRows.map(row => `'${row.Log}'`).toString()}})\n\t AND Grade = '{{appsmith.store.Product}}';\n\t\n",
+      "body": "SELECT  LM,\n    TJAS, Peices FROM \n\t(SELECT Ordername  \n\t FROM Orders\n\t JOIN Shipment ON Orders.ShipmentID = Shipment.ShipmentID \n\t WHERE Orders.ShipmentID = {{SelectShipmentDispatch.selectedOptionValue}}) O\nJOIN \n\t (SELECT \n\t\t  Ordername,\n\t\t  SUM(JAS) as TJAS,\n\t\t  SUM(Length) as LM,\n\t\t  COUNT(Log) as Peices\n\t\tFROM Scaling GROUP BY Ordername) S\n\t ON O.Ordername = S.Ordername;",
       "pluginSpecifiedTemplates": [
         {
           "value": false
@@ -35,16 +35,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "LogTable.selectedRows.map(row => `'${row.Log}'`).toString()",
-      "Orders.selectedItem.Ordername",
-      "appsmith.store.Product"
+      "SelectShipmentDispatch.selectedOptionValue"
     ],
-    "userSetOnLoad": false,
+    "userSetOnLoad": true,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Shipping_Add_Log_Query",
+  "id": "Shipping_SelectShipmentSummaryTotal",
   "deleted": false,
-  "gitSyncId": "62c64eab5a06d81bded2fac9_62f70a33624e841f0cc17fd4"
+  "gitSyncId": "62c64eab5a06d81bded2fac9_62f9b6c2624e841f0cc1802a"
 }

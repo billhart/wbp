@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "ShipmentSummary",
+    "pageId": "Shipping",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tsummary: async () => {\n\t\tconst grades = Grade.data.map((row) => `${row.Grade}`);\n\t\tconst data = SelectOrdersFullmentDispatch.data;\n\t\tconsole.log(data);\n\t\t//use async-await or promises\n\t}\n}",
+    "variables": []
+  },
+  "id": "Shipping_ShipmentSummary",
+  "deleted": false,
+  "gitSyncId": "62c64eab5a06d81bded2fac9_62f8757e624e841f0cc1800e"
+}
