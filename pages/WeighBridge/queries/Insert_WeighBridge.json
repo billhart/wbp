@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 60000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "INSERT INTO WeighBridge (Docket, WB_Docket, Date, Rego, Supplier, Operations, Coupe, Harvestor, FPP, Gross, Tare, GMT, Grade, Length)\n  VALUES {{this.params.data}};",
+      "body": "INSERT IGNORE INTO WeighBridge (Docket, WB_Docket, Date, Rego, Supplier, Operations, Coupe, Harvestor, FPP, Gross, Tare, GMT, Grade, Length)\n  VALUES {{this.params.data}};",
       "pluginSpecifiedTemplates": [
         {
           "value": false

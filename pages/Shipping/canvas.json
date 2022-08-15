@@ -4357,8 +4357,13 @@
                               "resetFormOnClick": true,
                               "boxShadow": "none",
                               "widgetName": "Button1Copy1",
-                              "onClick": "{{InsertShipment.run(() => SelectShipCurrent.run(), () => {})}}",
+                              "onClick": "{{InsertShipment.run(() => SelectShipCurrent.run(() => SelectShipCurrentAll.run()), () => {})}}",
                               "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "onClick"
+                                }
+                              ],
                               "displayName": "Button",
                               "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
                               "searchTags": [
@@ -22475,7 +22480,7 @@
                       "resetFormOnClick": false,
                       "boxShadow": "none",
                       "widgetName": "Button14",
-                      "onClick": " {{InsertShippedLogs.run()\n    .then(() => MarkedShipped.run()\n    .then(() => CleanUpWeighBridge.run()))}}",
+                      "onClick": "{{InsertShippedLogs.run()\n    .then(() => MarkedShipped.run()\n    .then(() => CleanUpWeighBridge.run()\n    .then(() => SelectShipCurrent.run()\n    .then(()=> SelectShipCurrentAll.run()\n\t.then(closeModal(\"ShipIt\"))))))}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                       "dynamicPropertyPathList": [
                         {
