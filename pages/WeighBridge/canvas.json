@@ -14922,7 +14922,7 @@
               "rightColumn": 64,
               "widgetId": "9at6fhct3e",
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-              "defaultTab": "Invalid",
+              "defaultTab": "Invalid WB",
               "shouldShowTabs": true,
               "tabsObj": {
                 "tab1": {

@@ -842,6 +842,9 @@
                         },
                         {
                           "key": "primaryColumns.FPP.computedValue"
+                        },
+                        {
+                          "key": "totalRecordsCount"
                         }
                       ],
                       "leftColumn": 0,
@@ -853,7 +856,7 @@
                       "enableClientSideSearch": false,
                       "version": 1,
                       "textColor": "#581c87",
-                      "totalRecordsCount": 0,
+                      "totalRecordsCount": "{{CountLogs.data[0].LogCount}}",
                       "isLoading": false,
                       "childStylesheet": {
                         "button": {
@@ -1425,6 +1428,16 @@
           ]
         },
         "layoutOnLoadActions": [
+          [
+            {
+              "id": "Archived Logs_CountLogs",
+              "name": "CountLogs",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ],
           [
             {
               "id": "Archived Logs_SelectArchiveQuery",
