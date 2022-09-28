@@ -1249,7 +1249,7 @@
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                              "onOptionChange": "{{GetOrderDetails.run()}}"
+                              "onOptionChange": "{{GetOrderDetails.run(() => {}, () => {})}}"
                             },
                             {
                               "resetFormOnClick": true,

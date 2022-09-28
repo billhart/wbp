@@ -2185,7 +2185,7 @@
                                       "label": "Docket",
                                       "validation": "{{((sourceData, formData, fieldState) => (Dockets.data.includes(formData.Docket))(invalid_scaling_update.sourceData, invalid_scaling_update.formData, invalid_scaling_update.fieldState)}}",
                                       "errorMessage": "{{((sourceData, formData, fieldState) => (`Docket number does not exist in weighbridge table`))(invalid_scaling_update.sourceData, invalid_scaling_update.formData, invalid_scaling_update.fieldState)}}",
-                                      "minNum": "999",
+                                      "minNum": "0",
                                       "maxNum": "9999999"
                                     },
                                     "Grade": {
