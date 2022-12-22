@@ -19,7 +19,6 @@
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "UPDATE Invalid_Scaling SET\n\t\tLocation = '{{invalid_scaling_update.fieldState.Location.isVisible ? invalid_scaling_update.formData.Location : invalid_scaling_update.sourceData.Location}}',\n\t\tDocket = '{{invalid_scaling_update.fieldState.Docket.isVisible ? invalid_scaling_update.formData.Docket : invalid_scaling_update.sourceData.Docket}}',\n    Grade = '{{invalid_scaling_update.fieldState.Grade.isVisible ? invalid_scaling_update.formData.Grade : invalid_scaling_update.sourceData.Grade}}',\n\t\tLength = '{{invalid_scaling_update.fieldState.Length.isVisible ? invalid_scaling_update.formData.Length : invalid_scaling_update.sourceData.Length}}',\n\t\tDiameter = '{{invalid_scaling_update.fieldState.Diameter.isVisible ? invalid_scaling_update.formData.Diameter : invalid_scaling_update.sourceData.Diameter}}',\n\t\tJAS = '{{invalid_scaling_update.fieldState.JAS.isVisible ? invalid_scaling_update.formData.JAS : invalid_scaling_update.sourceData.JAS}}',\n\t\tDate = '{{invalid_scaling_update.fieldState.Date.isVisible ? invalid_scaling_update.formData.Date.split('T')[0] : invalid_scaling_update.sourceData.Date.split('T')[0]}}',\n\t\tReason = '{{invalid_scaling_update.fieldState.Reason.isVisible ? invalid_scaling_update.formData.Reason : invalid_scaling_update.sourceData.Reason}}'\nWHERE Log = {{invalid_table.selectedRow.Log}};",
-      "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
           "value": true
