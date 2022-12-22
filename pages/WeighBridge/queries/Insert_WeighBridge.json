@@ -19,6 +19,7 @@
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "INSERT IGNORE INTO WeighBridge (Docket, WB_Docket, Date, Rego, Supplier, Operations, Coupe, Harvestor, FPP, Gross, Tare, GMT, Grade, Length)\n  VALUES {{this.params.data}};",
+      "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
           "value": false

@@ -19,6 +19,7 @@
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "DELETE FROM Scaling WHERE Ordername IN\n\n\t(SELECT Ordername\n\t\t\t FROM Orders\n\t\t\t JOIN Shipment ON Orders.ShipmentID = Shipment.ShipmentID \n\t\t\t WHERE Orders.ShipmentID = {{SelectShipmentDispatch.selectedOptionValue}});",
+      "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
           "value": false

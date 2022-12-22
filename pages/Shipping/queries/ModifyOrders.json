@@ -19,6 +19,7 @@
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "UPDATE Orders SET \n\tNotes = '{{ModifyOrderForm.data.OrderNotesInCopy}}',\n\tAddress = '{{ModifyOrderForm.data.AddressInCopy}}',\n\tContactName = '{{ModifyOrderForm.data.ContactNameInCopy}}',\n\tPhoneEmail = '{{ModifyOrderForm.data.ContactPhoneEmailInCopy}}',\n\tShipmentID = '{{ModifyOrderForm.data.ShipmentIDCopy}}',\n\tOrderSize = '{{ModifyOrderForm.data.OrderSizeInCopy}}',\n\tProduct1 = '{{ModifyOrderForm.data.Product1Copy}}',\n    Price1 = '{{ModifyOrderForm.data.Price1Copy}}',\n\tProduct2 = '{{ModifyOrderForm.data.Product2Copy}}', \n    Price2 = '{{ModifyOrderForm.data.Price2Copy}}', \n\tProduct3 = '{{ModifyOrderForm.data.Product3Copy}}', \n    Price3 = '{{ModifyOrderForm.data.Price3Copy}}', \n\tProduct4 = '{{ModifyOrderForm.data.Product4Copy}}', \n    Price4 = '{{ModifyOrderForm.data.Price4Copy}}', \n\tProduct5 = '{{ModifyOrderForm.data.Product5Copy}}', \n    Price5 = '{{ModifyOrderForm.data.Price5Copy}}' \n\tWHERE Ordername = '{{ModifyOrderForm.data.OrderID}}'\n",
+      "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
           "value": false

@@ -19,6 +19,7 @@
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "SELECT * FROM WeighBridge\nWHERE (WB_Docket like '%{{wb_data_table.searchText || \"\"}}%' OR Docket like '%{{wb_data_table.searchText || \"\"}}%' OR Supplier like '%{{wb_data_table.searchText || \"\"}}%'\n\t\t OR Rego like '%{{wb_data_table.searchText || \"\"}}%' OR Date like '%{{wb_data_table.searchText || \"\"}}%' )\nORDER BY {{wb_data_table.sortOrder.column || 'Date DESC, Docket'}} {{wb_data_table.sortOrder.order || \"DESC\"}}\nLIMIT {{wb_data_table.pageSize}}\nOFFSET {{(wb_data_table.pageNo - 1) * wb_data_table.pageSize}};",
+      "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
           "value": false

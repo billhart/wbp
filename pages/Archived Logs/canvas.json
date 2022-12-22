@@ -19,7 +19,7 @@
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 59,
+          "version": 71,
           "minHeight": 890,
           "parentColumnSpace": 1,
           "dynamicTriggerPathList": [],
@@ -78,6 +78,7 @@
                       "labelTextSize": "0.875rem",
                       "rightColumn": 41,
                       "textAlign": "LEFT",
+                      "dynamicHeight": "FIXED",
                       "widgetId": "35yoxo4oec",
                       "isVisible": "true",
                       "fontStyle": "BOLD",
@@ -86,7 +87,9 @@
                       "parentId": "zi8fjakv8o",
                       "isLoading": false,
                       "borderRadius": "0px",
-                      "fontSize": "1.5rem"
+                      "maxDynamicHeight": 9000,
+                      "fontSize": "1.5rem",
+                      "minDynamicHeight": 4
                     },
                     {
                       "boxShadow": "none",
@@ -177,6 +180,7 @@
                       "labelTextSize": "0.875rem",
                       "rightColumn": 63,
                       "textAlign": "LEFT",
+                      "dynamicHeight": "FIXED",
                       "widgetId": "48uac29g6e",
                       "isVisible": "true",
                       "fontStyle": "",
@@ -185,7 +189,9 @@
                       "parentId": "zi8fjakv8o",
                       "isLoading": false,
                       "borderRadius": "0px",
-                      "fontSize": "1rem"
+                      "maxDynamicHeight": 9000,
+                      "fontSize": "1rem",
+                      "minDynamicHeight": 4
                     }
                   ],
                   "isDisabled": false,
@@ -204,6 +210,7 @@
               "labelTextSize": "0.875rem",
               "rightColumn": 45,
               "detachFromLayout": true,
+              "dynamicHeight": "FIXED",
               "widgetId": "i3whp03wf0",
               "canOutsideClickClose": true,
               "canEscapeKeyClose": true,
@@ -211,7 +218,9 @@
               "parentId": "0",
               "isLoading": false,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "width": 456
+              "maxDynamicHeight": 9000,
+              "width": 456,
+              "minDynamicHeight": 4
             },
             {
               "boxShadow": "none",
@@ -566,6 +575,7 @@
                       "labelTextSize": "0.875rem",
                       "backgroundColor": "#fff",
                       "rightColumn": 64,
+                      "dynamicHeight": "FIXED",
                       "autoGenerateForm": true,
                       "widgetId": "w10l8merz2",
                       "resetButtonStyles": {
@@ -660,7 +670,9 @@
                         }
                       },
                       "disabledWhenInvalid": true,
-                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "maxDynamicHeight": 9000,
+                      "minDynamicHeight": 4
                     }
                   ],
                   "isDisabled": false,
@@ -679,6 +691,7 @@
               "labelTextSize": "0.875rem",
               "rightColumn": 41,
               "detachFromLayout": true,
+              "dynamicHeight": "FIXED",
               "widgetId": "vmorzie6eq",
               "canOutsideClickClose": true,
               "canEscapeKeyClose": true,
@@ -686,7 +699,9 @@
               "parentId": "0",
               "isLoading": false,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "width": 532
+              "maxDynamicHeight": 9000,
+              "width": 532,
+              "minDynamicHeight": 4
             },
             {
               "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
@@ -761,36 +776,6 @@
                         },
                         {
                           "key": "boxShadow"
-                        },
-                        {
-                          "key": "childStylesheet.button.buttonColor"
-                        },
-                        {
-                          "key": "childStylesheet.button.borderRadius"
-                        },
-                        {
-                          "key": "childStylesheet.menuButton.menuColor"
-                        },
-                        {
-                          "key": "childStylesheet.menuButton.borderRadius"
-                        },
-                        {
-                          "key": "childStylesheet.iconButton.buttonColor"
-                        },
-                        {
-                          "key": "childStylesheet.iconButton.borderRadius"
-                        },
-                        {
-                          "key": "childStylesheet.editActions.saveButtonColor"
-                        },
-                        {
-                          "key": "childStylesheet.editActions.saveBorderRadius"
-                        },
-                        {
-                          "key": "childStylesheet.editActions.discardButtonColor"
-                        },
-                        {
-                          "key": "childStylesheet.editActions.discardBorderRadius"
                         },
                         {
                           "key": "tableData"
@@ -955,7 +940,8 @@
                           "label": "Log",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{archive_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Log\"]))}}"
+                          "computedValue": "{{archive_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Log\"]))}}",
+                          "validation": {}
                         },
                         "Docket": {
                           "allowCellWrapping": false,
@@ -980,7 +966,8 @@
                           "label": "Docket",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{archive_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Docket\"]))}}"
+                          "computedValue": "{{archive_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Docket\"]))}}",
+                          "validation": {}
                         },
                         "Grade": {
                           "allowCellWrapping": false,
@@ -1005,7 +992,8 @@
                           "label": "Grade",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{archive_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Grade\"]))}}"
+                          "computedValue": "{{archive_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Grade\"]))}}",
+                          "validation": {}
                         },
                         "Length": {
                           "allowCellWrapping": false,
@@ -1030,7 +1018,8 @@
                           "label": "Length",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{archive_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Length\"]))}}"
+                          "computedValue": "{{archive_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Length\"]))}}",
+                          "validation": {}
                         },
                         "Diameter": {
                           "allowCellWrapping": false,
@@ -1055,7 +1044,8 @@
                           "label": "Diameter",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{archive_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Diameter\"]))}}"
+                          "computedValue": "{{archive_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Diameter\"]))}}",
+                          "validation": {}
                         },
                         "JAS": {
                           "allowCellWrapping": false,
@@ -1080,7 +1070,8 @@
                           "label": "JAS",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{archive_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"JAS\"]))}}"
+                          "computedValue": "{{archive_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"JAS\"]))}}",
+                          "validation": {}
                         },
                         "ShipDate": {
                           "allowCellWrapping": false,
@@ -1105,7 +1096,8 @@
                           "label": "ShipDate",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{archive_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"ShipDate\"]))}}"
+                          "computedValue": "{{archive_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"ShipDate\"]))}}",
+                          "validation": {}
                         },
                         "ScaleDate": {
                           "allowCellWrapping": false,
@@ -1130,7 +1122,8 @@
                           "label": "ScaleDate",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{archive_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"ScaleDate\"]))}}"
+                          "computedValue": "{{archive_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"ScaleDate\"]))}}",
+                          "validation": {}
                         },
                         "Ordername": {
                           "allowCellWrapping": false,
@@ -1155,7 +1148,8 @@
                           "label": "Ordername",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{archive_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Ordername\"]))}}"
+                          "computedValue": "{{archive_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Ordername\"]))}}",
+                          "validation": {}
                         },
                         "Vessel": {
                           "allowCellWrapping": false,
@@ -1180,7 +1174,8 @@
                           "label": "Vessel",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{archive_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Vessel\"]))}}"
+                          "computedValue": "{{archive_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Vessel\"]))}}",
+                          "validation": {}
                         },
                         "Rego": {
                           "allowCellWrapping": false,
@@ -1205,7 +1200,8 @@
                           "label": "Rego",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{archive_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Rego\"]))}}"
+                          "computedValue": "{{archive_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Rego\"]))}}",
+                          "validation": {}
                         },
                         "Supplier": {
                           "allowCellWrapping": false,
@@ -1230,7 +1226,8 @@
                           "label": "Supplier",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{archive_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Supplier\"]))}}"
+                          "computedValue": "{{archive_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Supplier\"]))}}",
+                          "validation": {}
                         },
                         "Operations": {
                           "allowCellWrapping": false,
@@ -1255,7 +1252,8 @@
                           "label": "Operations",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{archive_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Operations\"]))}}"
+                          "computedValue": "{{archive_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Operations\"]))}}",
+                          "validation": {}
                         },
                         "Coupe": {
                           "allowCellWrapping": false,
@@ -1280,7 +1278,8 @@
                           "label": "Coupe",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{archive_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Coupe\"]))}}"
+                          "computedValue": "{{archive_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Coupe\"]))}}",
+                          "validation": {}
                         },
                         "Harvestor": {
                           "allowCellWrapping": false,
@@ -1305,7 +1304,8 @@
                           "label": "Harvestor",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{archive_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Harvestor\"]))}}"
+                          "computedValue": "{{archive_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Harvestor\"]))}}",
+                          "validation": {}
                         },
                         "FPP": {
                           "allowCellWrapping": false,
@@ -1330,7 +1330,8 @@
                           "label": "FPP",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{archive_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"FPP\"]))}}"
+                          "computedValue": "{{archive_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"FPP\"]))}}",
+                          "validation": {}
                         }
                       },
                       "key": "ok4gexc3s4",
@@ -1384,6 +1385,7 @@
                       "isDeprecated": false,
                       "rightColumn": 16,
                       "textAlign": "LEFT",
+                      "dynamicHeight": "FIXED",
                       "widgetId": "he9uia4f4r",
                       "isVisible": true,
                       "fontStyle": "BOLD",
@@ -1393,7 +1395,9 @@
                       "renderMode": "CANVAS",
                       "isLoading": false,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "fontSize": "1rem"
+                      "maxDynamicHeight": 9000,
+                      "fontSize": "1rem",
+                      "minDynamicHeight": 4
                     }
                   ],
                   "key": "r1bpkva0z3",
@@ -1416,6 +1420,7 @@
               "backgroundColor": "#faf5ff",
               "isDeprecated": false,
               "rightColumn": 64,
+              "dynamicHeight": "FIXED",
               "widgetId": "xgq3zsnn0k",
               "containerStyle": "card",
               "isVisible": true,
@@ -1423,7 +1428,9 @@
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false,
-              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "maxDynamicHeight": 9000,
+              "minDynamicHeight": 4
             }
           ]
         },
@@ -1455,6 +1462,7 @@
             }
           ]
         ],
+        "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
         "id": "Archived Logs",
         "deleted": false,

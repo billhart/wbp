@@ -19,6 +19,7 @@
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "UPDATE Shipment SET \n\tVessel = '{{ModifyShipmentForm.data.VesselInCopy}}',\n\tMonth = '{{ModifyShipmentForm.data.DatePicker1Copy.split('T')[0]}}',\n\tCapacity = '{{ModifyShipmentForm.data.CapacityInCopy}}'\n\tWHERE ShipmentID = {{ModifyShipmentForm.data.currentShip}}\n",
+      "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
           "value": false

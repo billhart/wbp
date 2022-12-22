@@ -19,6 +19,7 @@
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "DELETE FROM Orders \n\tWHERE Ordername = '{{ModifyOrderForm.data.OrderID}}';\n\nUPDATE Scaling\n  SET Ordername = 'YARD'\n  WHERE Ordername = '{{ModifyOrderForm.data.OrderID}}';",
+      "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
           "value": false
