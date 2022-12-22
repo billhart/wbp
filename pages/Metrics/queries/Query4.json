@@ -15,7 +15,6 @@
     },
     "pageId": "Metrics",
     "actionConfiguration": {
-      "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "INSERT INTO FPPTable (Operations, Supplier, FPP, Expiry, Coupe, Harvestor, Claim, Certificate, Cert_Holder, Claim_From)\n  VALUES ('', '', '', '2019-07-01', '', '', '', '', '', '');",
