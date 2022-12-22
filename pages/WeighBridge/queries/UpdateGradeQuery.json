@@ -19,6 +19,7 @@
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "UPDATE Grade SET\n\t\tGrade = '{{update_Grade.fieldState.Grade.isVisible ? update_Grade.formData.Grade : update_Grade.sourceData.Grade}}',\n\t\tNotes = '{{update_Grade.fieldState.Notes.isVisible ? update_Grade.formData.Notes : update_Grade.sourceData.Notes}}'\nWHERE Grade = {{grade_table.selectedRow.Grade}};",
+      "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
           "value": true

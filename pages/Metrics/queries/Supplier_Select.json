@@ -19,6 +19,7 @@
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": " SELECT Supplier,\n        SUM(GMT) as Tonnes,\n        SUM(Rejected) as RejectJAS,\n        SUM(Received) as ReceivedJAS,\n        SUM(Total_Jas) as JAS,\n        SUM(Pieces) as TotalLogs,\n\t\t\t\t(SUM(Total_Jas) / SUM(GMT)) as CVR,\n\t\t\t\tCOUNT(Docket) as Loads\n FROM\n        (SELECT Docket,\n                Supplier,\n                GMT,\n                Rejected,\n                Received,\n                Total_Jas,\n                Pieces\n        FROM (SELECT Docket, \n                    Supplier,\n                    GMT\n            FROM WeighBridge) W\n        JOIN\n            (SELECT  Doc, \n                IFNULL(p + rejects,p) as Pieces, \n                IFNULL(rejectjas,0) as Rejected, \n                Received, \n                IFNULL(rejectjas + Received, Received) as Total_Jas\n            FROM\n                (SELECT Docket as Doc, \n                    COUNT(Docket) as p, \n                    SUM(JAS) as Received\n                    FROM Scaling GROUP BY Docket) v\n            LEFT JOIN\n                (SELECT Docket as D, \n                    COUNT(Docket) as rejects, \n                    SUM(JAS) as rejectjas  \n                    FROM Reject_Scaling GROUP BY Docket) r\n            ON r.D = v.Doc) S\n        ON W.Docket = S.Doc) T GROUP BY Supplier ORDER BY Supplier;",
+      "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
           "value": true

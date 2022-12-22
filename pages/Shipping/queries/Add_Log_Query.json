@@ -19,6 +19,7 @@
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "UPDATE Scaling\n  SET Ordername = '{{Orders.selectedItem.Ordername}}'\n  WHERE Log IN ({{LogTable.selectedRows.map(row => `'${row.Log}'`).toString()}})\n\t AND Grade = '{{appsmith.store.Product}}';\n\t\n",
+      "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
           "value": false

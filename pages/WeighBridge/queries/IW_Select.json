@@ -19,6 +19,7 @@
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "SELECT * FROM Invalid_WeighBridge\nWHERE (WB_Docket like '%{{iw_data_table.searchText || \"\"}}%' OR Docket like '%{{iw_data_table.searchText || \"\"}}%')\nORDER BY {{iw_data_table.sortOrder.column || 'WB_Docket'}} {{iw_data_table.sortOrder.order || \"DESC\"}};",
+      "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
           "value": false

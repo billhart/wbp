@@ -19,6 +19,7 @@
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "DELETE FROM WeighBridge WHERE Docket IN ({{wb_data_table.selectedRows.map(row => `'${row.Docket}'`).toString()}});",
+      "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
           "value": false
