@@ -19,6 +19,7 @@
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "INSERT INTO WeighBridge (\n\tDocket,\n\tWB_Docket,\n\tDate,\n\tRego,\n\tSupplier,\n\tOperations,\n\tCoupe,\n\tHarvestor,\n\tGross,\n\tTare,\n\tGMT,\n\tGrade,\n\tLength\n)\nVALUES (\n\t'{{WB_Validate_Form.formData.Docket}}',\n\t'{{WB_Validate_Form.selectedRow.WB_Docket}}',\n\t'{{WB_Validate_Form.formData.Date}}',\n\t'{{WB_Validate_Form.formData.Rego}}',\n\t'{{WB_Validate_Form.formData.Supplier}}',\n\t'{{WB_Validate_Form.formData.Operations}}',\n\t'{{WB_Validate_Form.formData.Coupe}}',\n\t'{{WB_Validate_Form.formData.Harvestor}}',\n\t'{{WB_Validate_Form.formData.Gross}}',\n\t'{{WB_Validate_Form.formData.Tare}}',\n\t'{{WB_Validate_Form.formData.GMT}}',\n\t'{{WB_Validate_Form.formData.Grade}}',\n\t'{{WB_Validate_Form.formData.Length}}'\n);",
+      "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
           "value": true

@@ -1,0 +1,16 @@
+{
+  "unpublishedCollection": {
+    "name": "JSObject2",
+    "pageId": "Metrics",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\ttransferscalinglstable: async () => {\n\t\tawait ExcelScalingSelect.run();\n\t\tawait DocketSelect.run();\n\t\t\n\t\tconst docketset = new Set(DocketSelect.data.map(item => item.Docket));\n\t\tvar scale = [];\n\t\tvar reject = [];\n\t\tvar invalid = [];\n\n\t\tExcelScalingSelect.data.forEach(function (entry) {\n\t\t\t\t\t\tif (! docketset.has(parseInt(entry.Docket))) {\n\t\t\t\t\t\t\tinvalid.push('(' + [entry.Log, entry.Docket, entry.Grade, entry.Length, entry.Diameter, entry.JAS, entry.Location, entry.Date, entry.Reason, 'docket not found'].map(val => `'${val}'`).join(',') + ')');\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t} else if (entry.Status == 'Rejected')\t{\n\t\t\t\t\t\t\treject.push('(' + [entry.Log, entry.Docket, entry.Grade, entry.Length, entry.Diameter, entry.JAS, entry.Date, entry.Reason].map(val => `'${val}'`).join(',') + ')');\n\t\t\t\t\t\t}\telse {\n\t\t\t\t\t\t\tscale.push('(' + [entry.Log, entry.Docket, entry.Grade, entry.Length, entry.Diameter, entry.JAS, entry.Location, entry.Date].map(val => `'${val}'`).join(',') + ')');\n\t\t\t\t\t\t} \n\t\t});\n\t\tif (scale.length > 0) InsertScaling.run({'data':scale.join(',')});\n\t\tif (reject.length > 0) InsertRejectScaling.run({'data':reject.join(',')});\n\t\tif (invalid.length > 0) InsertInvalidScaling.run({'data':invalid.join(',')});\n\t}\n}",
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Metrics_JSObject2",
+  "deleted": false,
+  "gitSyncId": "62c64eab5a06d81bded2fac9_6385a4b84984012d5829c44e"
+}

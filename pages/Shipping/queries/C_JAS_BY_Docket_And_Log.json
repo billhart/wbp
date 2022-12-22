@@ -19,6 +19,7 @@
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "SELECT\n\tLog, \n\tJAS \n\tFROM Scaling WHERE Ordername = '{{Orders.selectedItem.Ordername}}' AND Docket = '{{DocketTableCopy.selectedRow.Docket}}' AND Grade = '{{appsmith.store.Product}}'  ORDER BY Log ASC;",
+      "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
           "value": false

@@ -19,6 +19,7 @@
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "DELETE FROM Operations\n  WHERE Operations IN ({{Operations_table.selectedRows.map(row => `'${row.Operations}'`).toString()}});",
+      "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
           "value": false

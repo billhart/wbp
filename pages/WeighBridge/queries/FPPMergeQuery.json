@@ -19,6 +19,7 @@
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "UPDATE WeighBridge\nSET FPP = '{{MergeAndDeleteFPP.data.FPPSelect}}'\nWHERE FPP = '{{FPP_table.selectedRow.FPP}}';\n\nUPDATE Invalid_WeighBridge\nSET FPP = '{{MergeAndDeleteFPP.data.FPPSelect}}'\nWHERE FPP = '{{FPP_table.selectedRow.FPP}}';\n\nDELETE FROM FPP WHERE FPP = '{{FPP_table.selectedRow.FPP}}';\n",
+      "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
           "value": true

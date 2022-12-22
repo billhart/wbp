@@ -19,6 +19,7 @@
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "SELECT * FROM ShippedLogs\nWHERE (Ordername like '%{{archive_table.searchText || \"\"}}%' \n\t\t\t OR Vessel like '%{{archive_table.searchText || \"\"}}%'\n\t\t\t OR Log like '%{{archive_table.searchText || \"\"}}%'\n\t\t\t OR Docket like '%{{archive_table.searchText || \"\"}}%'\n\t\t\t OR Grade like '%{{archive_table.searchText || \"\"}}%'\n\t\t\t OR Supplier like '%{{archive_table.searchText || \"\"}}%'\n\t\t\t OR ShipDate like '%{{archive_table.searchText || \"\"}}%'\n\t\t\t) \nORDER BY {{archive_table.sortOrder.column || 'Log'}} {{archive_table.sortOrder.order || \"ASC\"}}\nLIMIT {{archive_table.pageSize}}\nOFFSET {{(archive_table.pageNo - 1) * archive_table.pageSize}};",
+      "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
           "value": false
