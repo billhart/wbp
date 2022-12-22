@@ -19,6 +19,7 @@
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "Select * FROM Shipment WHERE ShipmentID = {{ModifyShipmentForm.data.currentShip}};",
+      "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
           "value": false

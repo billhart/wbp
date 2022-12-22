@@ -1,0 +1,16 @@
+{
+  "unpublishedCollection": {
+    "name": "getSpreadSheetNames",
+    "pageId": "Metrics",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n    getSpreadsheetNames: () => {\n        return fetchAllSpreadsheets.data.map((spreadsheet) => {\n            return {\n                \"label\": spreadsheet.name,\n                \"value\" : spreadsheet.url\n            }\n        })\n    }\n}",
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Metrics_getSpreadSheetNames",
+  "deleted": false,
+  "gitSyncId": "62c64eab5a06d81bded2fac9_6385a0cc4984012d5829c446"
+}

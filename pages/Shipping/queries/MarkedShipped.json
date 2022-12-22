@@ -19,6 +19,7 @@
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "UPDATE Orders \n\tSET Shipped = 1\nWHERE ShipmentID = {{SelectShipmentDispatch.selectedOptionValue}};\n\nUPDATE Shipment\n\tSET Shipped = 1\nWHERE ShipmentID = {{SelectShipmentDispatch.selectedOptionValue}};",
+      "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
           "value": false

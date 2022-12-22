@@ -19,6 +19,7 @@
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "DELETE FROM WeighBridge;\nDELETE FROM Invalid_WeighBridge;-- Specify a valid condition here. Removing the condition may delete everything in the table!",
+      "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
           "value": true

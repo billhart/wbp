@@ -19,6 +19,7 @@
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "UPDATE WeighBridge\nSET Harvestor = '{{MergeAndDeleteHarvestor.data.HarvestorSelect}}'\nWHERE Harvestor = '{{harvestor_table.selectedRow.Harvestor}}';\n\nUPDATE Invalid_WeighBridge\nSET Harvestor = '{{MergeAndDeleteHarvestor.data.HarvestorSelect}}'\nWHERE Harvestor = '{{harvestor_table.selectedRow.Harvestor}}';\n\nDELETE FROM Harvestor WHERE Harvestor = '{{harvestor_table.selectedRow.Harvestor}}';",
+      "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
           "value": false

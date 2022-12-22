@@ -1,0 +1,21 @@
+{
+  "unpublishedCollection": {
+    "name": "settings",
+    "pageId": "FPPTable",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tfontsize: '0.75rem'\n}",
+    "variables": [
+      {
+        "name": "fontsize",
+        "value": "'0.75rem'"
+      }
+    ],
+    "userPermissions": []
+  },
+  "id": "FPPTable_settings",
+  "deleted": false,
+  "gitSyncId": "62c64eab5a06d81bded2fac9_63a2b1864064783a6efe6230"
+}

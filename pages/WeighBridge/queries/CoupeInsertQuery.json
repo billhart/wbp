@@ -19,6 +19,7 @@
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "INSERT INTO Coupe (\n\tCoupe,\n\tDate_Added)\nVALUES (\n\t'{{new_coupe.formData.Coupe}}',\n\t'{{new Date().toISOString().split('T')[0]}}');",
+      "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
           "value": true

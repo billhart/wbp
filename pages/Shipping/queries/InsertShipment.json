@@ -19,6 +19,7 @@
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "INSERT INTO Shipment (Vessel, Month, Capacity)\n  VALUES ('{{CreateShipmentForm.data.VesselIn}}',\n\t\t\t\t '{{CreateShipmentForm.data.DatePicker1.split('T')[0]}}',\n\t\t\t\t '{{CreateShipmentForm.data.CapacityIn}}');",
+      "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
           "value": false

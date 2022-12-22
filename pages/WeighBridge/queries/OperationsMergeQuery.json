@@ -19,6 +19,7 @@
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "UPDATE WeighBridge\nSET Operations = '{{MergeAndDeleteOperations.data.OperationsSelect}}'\nWHERE Operations = '{{Operations_table.selectedRow.Operations}}';\n\nUPDATE Invalid_WeighBridge\nSET Operations = '{{MergeAndDeleteOperations.data.OperationsSelect}}'\nWHERE Operations = '{{Operations_table.selectedRow.Operations}}';\n\nDELETE FROM Operations WHERE Operations = '{{Operations_table.selectedRow.Operations}}';",
+      "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
           "value": true

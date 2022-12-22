@@ -19,6 +19,7 @@
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "Select * FROM Orders  JOIN (SELECT ShipmentID as ShipID, Vessel, Month, Capacity, Shipped FROM Shipment) as S ON Orders.ShipmentID = S.ShipID\nWHERE Ordername = '{{ModifyOrderForm.data.OrderID}}';",
+      "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
           "value": false

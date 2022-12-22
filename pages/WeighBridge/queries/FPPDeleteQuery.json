@@ -19,6 +19,7 @@
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "DELETE FROM FPP\n  WHERE FPP IN ({{FPP_table.selectedRows.map(row => `'${row.FPP}'`).toString()}});",
+      "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
           "value": false
