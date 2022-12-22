@@ -7,7 +7,8 @@
     "actions": [],
     "archivedActions": [],
     "body": "export default {\n  parseData: () => {\n\t\t//console.log(Scaling_Picker.files, Scaling_Picker.files[0].data.split('\\n'))\n\t\treturn Scaling_Picker.files[0].data\n\t\t\t.split(/\\r?\\n/)\n\t\t\t.slice(1)\n\t\t\t.map(item => `(${item.split(',').map(val => `'${val}'`).join(',')})`)\n\t\t\t.join(',')\n\t\t\t.replaceAll(\",('')\",'');\n\t},\n\tuploadData: () => {\n\t\tlet data = this.parseData();\n\t\t//console.log(data)\n\t\tInsert_Raw_Scaling.run(async () => {\n\t\t\tshowAlert('Successfully added new entries','success');\n\t\t\tresetWidget('Scaling_Picker');\n\t\t\tCount_Scaling.run();\n\t\t}, () => {}, {'data': data});\n\t}\n}",
-    "variables": []
+    "variables": [],
+    "userPermissions": []
   },
   "id": "Scaling_Upload_Raw_Scaling_CSV",
   "deleted": false,

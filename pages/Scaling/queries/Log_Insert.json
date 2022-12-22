@@ -19,6 +19,7 @@
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "INSERT INTO Scaling (\n\tLog,\n\tDocket,\n\tGrade,\n\tLength,\n\tDiameter,\n\tJAS,\n\tLocation,\n\tDate\n)\nVALUES (\n\t'{{valid_scaling_add.formData.Log}}',\n\t'{{valid_scaling_add.formData.Docket}}',\n\t'{{valid_scaling_add.formData.Grade}}',\n\t'{{valid_scaling_add.formData.Length}}',\n\t'{{valid_scaling_add.formData.Diameter}}',\n\t'{{valid_scaling_add.formData.JAS}}',\n\t'{{valid_scaling_add.formData.Location}}',\n\t'{{valid_scaling_add.formData.Date.split('T')[0]}}'\n);",
+      "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
           "value": true
