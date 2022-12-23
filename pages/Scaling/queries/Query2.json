@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "mysql-plugin",
   "unpublishedAction": {
-    "name": "Logs",
+    "name": "Query2",
     "datasource": {
       "name": "Log Base",
       "pluginId": "mysql-plugin",
@@ -15,18 +15,17 @@
     },
     "pageId": "Scaling",
     "actionConfiguration": {
-      "timeoutInMillisecond": 60000,
+      "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT Log FROM Scaling;",
-      "selfReferencingDataPaths": [],
+      "body": "Update Scaling SET Ordername = 'YARD' WHERE 1;",
       "pluginSpecifiedTemplates": [
         {
           "value": true
         }
       ]
     },
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "dynamicBindingPathList": [],
     "isValid": true,
     "invalids": [],
@@ -37,7 +36,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Scaling_Logs",
+  "id": "Scaling_Query2",
   "deleted": false,
-  "gitSyncId": "62c64eab5a06d81bded2fac9_62d9fcdc5a06d81bded2fe18"
+  "gitSyncId": "62c64eab5a06d81bded2fac9_62f4b579624e841f0cc17f76"
 }
