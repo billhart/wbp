@@ -19,6 +19,7 @@
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "UPDATE Scaling SET\n\t\tLocation = '{{SelectLocation.selectedOptionValue}}',\nWHERE Docket = '{{docket_location.selectedRow.Docket}}';\n\nUPDATE Invalid_Scaling SET\n\t\tLocation = '{{SelectLocation.selectedOptionValue}}',\nWHERE Docket = '{{docket_location.selectedRow.Docket}}';",
+      "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
           "value": false

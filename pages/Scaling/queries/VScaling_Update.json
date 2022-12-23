@@ -19,6 +19,7 @@
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "UPDATE Scaling SET\n\t\tLocation = '{{valid_scaling_update.formData.Location}}',\n\t\tDocket = '{{valid_scaling_update.formData.Docket}}',\n    Grade = '{{valid_scaling_update.formData.Grade}}',\n\t\tLength = '{{valid_scaling_update.formData.Length}}',\n\t\tDiameter = '{{valid_scaling_update.formData.Diameter}}',\n\t\tJAS = '{{valid_scaling_update.formData.JAS}}',\n\t\tDate = '{{valid_scaling_update.formData.Date.split('T')[0]}}'\nWHERE Log = '{{valid_table.selectedRow.Log}}';",
+      "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
           "value": false

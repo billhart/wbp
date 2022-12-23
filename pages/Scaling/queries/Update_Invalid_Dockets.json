@@ -19,6 +19,7 @@
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "UPDATE Invalid_Scaling SET\n\t\tDocket = '{{DocketSelector.selectedOptionValue}}',\n\t\tReason = 'NA'\nWHERE Docket = '{{docket_table.selectedRow.Docket}}';",
+      "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
           "value": false
