@@ -7,7 +7,8 @@
     "actions": [],
     "archivedActions": [],
     "body": "export default {\n\tsummary: async () => {\n\t\tconst grades = Grade.data.map((row) => `${row.Grade}`);\n\t\tconst data = SelectOrdersFullmentDispatch.data;\n\t\tconsole.log(data);\n\t\t//use async-await or promises\n\t}\n}",
-    "variables": []
+    "variables": [],
+    "userPermissions": []
   },
   "id": "Shipping_ShipmentSummary",
   "deleted": false,

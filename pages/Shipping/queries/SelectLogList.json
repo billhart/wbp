@@ -19,6 +19,7 @@
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "SELECT Location,Docket,Log FROM Scaling \nWHERE Ordername = '{{SelectOrdersAll.selectedOptionValue}}'\nORDER BY Location,Docket,Log\n",
+      "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
           "value": false

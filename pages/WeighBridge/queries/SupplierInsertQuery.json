@@ -19,6 +19,7 @@
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "INSERT INTO Supplier (\n\tSupplier,\n\tNotes)\nVALUES (\n\t'{{new_supplier.formData.Supplier}}',\n\t'{{new_supplier.formData.Notes}}');",
+      "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
           "value": true

@@ -19,6 +19,7 @@
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "UPDATE WeighBridge SET\n    WB_Docket = 'BU028916',\n    Date = '2022-07-19',\n    Rego = 'XT19BJ',\n    Supplier = 'FORICO',\n    Operations = 'GP03LK107H',\n    Coupe = 'G132837',\n    Harvestor = 'C3 HA / C3 CA',\n    FPP = 'FPL0960-02',\n    Gross = '48',\n    Tare = '18.2',\n    GMT = '29.8',\n    Grade = 'N20',\n    Length = '5.8'\n  WHERE Docket = 4958001; -- Specify a valid condition here. Removing the condition may update every row in the table!",
+      "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
           "value": true

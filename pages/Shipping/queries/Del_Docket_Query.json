@@ -19,6 +19,7 @@
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "UPDATE Scaling\n  SET Ordername = 'YARD'\n  WHERE Docket IN ({{DocketTableCopy.selectedRows.map(row => `'${row.Docket}'`).toString()}}) AND Grade = '{{appsmith.store.Product}}' AND Ordername = '{{Orders.selectedItem.Ordername}}';\n\t\n\t\n",
+      "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
           "value": false

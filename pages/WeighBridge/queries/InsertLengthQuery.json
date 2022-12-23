@@ -19,6 +19,7 @@
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "INSERT INTO Lengths (\n\tLengths,\n\tNotes)\nVALUES (\n\t'{{new_Length.formData.Lengths}}',\n\t'{{new_Length.formData.Notes}}');",
+      "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
           "value": true

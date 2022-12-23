@@ -19,6 +19,7 @@
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "INSERT IGNORE INTO ShippedLogs (Log, Docket, Length, Grade, ScaleDate, ShipDate, JAS, Diameter, Rego, Supplier, Operations, Coupe, Harvestor, FPP, Ordername, Vessel)\nSELECT Log, Scaling.Docket, Scaling.Length, Scaling.Grade, Scaling.Date as ScaleDate, '{{new Date().toISOString().split('T')[0]}}' as ShipDate, JAS, Diameter, Rego, Supplier, Operations, Coupe, Harvestor, FPP, Scaling.Ordername, Vessel FROM Scaling\nJOIN\n(SELECT Ordername, Vessel\n\t\t FROM Orders\n\t\t JOIN Shipment ON Orders.ShipmentID = Shipment.ShipmentID \n\t\t WHERE Orders.ShipmentID = {{SelectShipmentDispatch.selectedOptionValue}}) O\nON Scaling.Ordername = O.Ordername\nJOIN \nWeighBridge ON WeighBridge.Docket = Scaling.Docket;",
+      "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
           "value": false
