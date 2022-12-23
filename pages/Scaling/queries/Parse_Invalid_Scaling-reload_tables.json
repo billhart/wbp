@@ -20,6 +20,7 @@
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "async () => {\n  console.log('reloading tables');\n  await VScaling.run();\n  await IScaling.run();\n  await RejectScaling.run();\n  await Invalid_Dockets.clear();\n  await Invalid_Dockets.run();\n  await Count_Scaling.run();\n  return 'success';\n}",
+      "selfReferencingDataPaths": [],
       "jsArguments": [],
       "isAsync": true
     },

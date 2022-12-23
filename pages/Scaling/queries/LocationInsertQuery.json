@@ -19,6 +19,7 @@
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "INSERT INTO Yard_Location (\n\tLocation,\n\tDate_Added,\n\tNotes)\nVALUES (\n\t'{{new_location.formData.Location.replace(/ /g,'').toUpperCase().substr(0,4) + ' ' + new_location.formData.Location.replace(/ /g,'').toUpperCase().substr(4)}}',\n\t'{{new_location.formData.Date_Added.split('T')[0]}}',\n\t'{{new_location.formData.Notes}}');\n\t",
+      "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
           "value": false

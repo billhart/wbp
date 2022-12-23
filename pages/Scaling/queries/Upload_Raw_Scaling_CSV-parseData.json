@@ -20,6 +20,7 @@
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "() => {\n  return Scaling_Picker.files[0].data.split(/\\r?\\n/).slice(1).map(item => `(${item.split(',').map(val => `'${val}'`).join(',')})`).join(',').replaceAll(\",('')\", '');\n}",
+      "selfReferencingDataPaths": [],
       "jsArguments": [],
       "isAsync": false
     },

@@ -18,7 +18,8 @@
       "timeoutInMillisecond": 60000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "UPDATE Invalid_Scaling SET\n\t\tDocket = '{{DocketSelector.selectedOptionValue}}',\n\t\tReason = 'NA'\nWHERE Docket = '{{docket_table.selectedRow.Docket}}';",
+      "body": "UPDATE Invalid_Scaling SET\n\t\tDocket = '{{DocketSelectorCopy.selectedOptionValue}}',\n\t\tReason = 'NA'\nWHERE Docket = '{{Invalid_Dockets_Table.selectedRow.Docket}}';",
+      "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
           "value": false
@@ -35,8 +36,8 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "DocketSelector.selectedOptionValue",
-      "docket_table.selectedRow.Docket"
+      "DocketSelectorCopy.selectedOptionValue",
+      "Invalid_Dockets_Table.selectedRow.Docket"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

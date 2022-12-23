@@ -19,6 +19,7 @@
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "UPDATE WeighBridge SET\n    WB_Docket = '{{Edit_Valid.data.WBDocketInV}}',\n    Date = '{{Edit_Valid.data.DateInV.split('T')[0]}}',\n    Rego = '{{Edit_Valid.data.RegoInV}}',\n    Supplier = '{{Edit_Valid.data.SupplierInV}}',\n    Operations = '{{Edit_Valid.data.OperationsInV}}',\n    Coupe = '{{Edit_Valid.data.CoupeInV}}',\n    Harvestor = '{{Edit_Valid.data.HarvestorInV}}',\n    FPP = '{{Edit_Valid.data.FPPInV}}',\n    Gross = '{{Edit_Valid.data.GrossInV}}',\n    Tare = '{{Edit_Valid.data.TareInV}}',\n    GMT = '{{Edit_Valid.data.GMTInV}}',\n    Grade = '{{Edit_Valid.data.GradeInV}}',\n    Length = '{{Edit_Valid.data.LengthInV}}'\n  WHERE Docket = '{{wb_data_table.selectedRow.Docket}}'; -- Specify a valid condition here. Removing the condition may update every row in the table!",
+      "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
           "value": true

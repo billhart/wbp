@@ -19,6 +19,7 @@
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "SELECT * FROM Reject_Scaling\nWHERE Reason like '%{{reject_data_table.searchText || \"\"}}%'\nORDER BY {{reject_data_table.sortOrder.column || 'Log'}} {{reject_data_table.sortOrder.order || \"ASC\"}}\nLIMIT {{reject_data_table.pageSize}}\nOFFSET {{(reject_data_table.pageNo - 1) * reject_data_table.pageSize}};",
+      "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
           "value": false

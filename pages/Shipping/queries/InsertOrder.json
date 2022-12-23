@@ -19,6 +19,7 @@
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "INSERT INTO Orders (\n\tOrdername, \n\tNotes, \n\tAddress, \n\tContactName, \n\tPhoneEmail, \n\tDate, \n\tShipmentID, \n\tOrderSize, \n\tProduct1, Price1, \n\tProduct2, Price2, \n\tProduct3, Price3, \n\tProduct4, Price4, \n\tProduct5, Price5)\nVALUES (\n\t\t'{{CreateOrderForm.data.OrderIn}}',\n\t  '{{CreateOrderForm.data.OrderNotesIn}}',\n\t  '{{CreateOrderForm.data.AddressIn}}',\n\t  '{{CreateOrderForm.data.ContactNameIn}}',\n\t  '{{CreateOrderForm.data.ContactPhoneEmailIn}}',\n\t  '{{new Date().toISOString().split('T')[0]}}',\n\t  '{{CreateOrderForm.data.ShipmentIDC}}',\n\t  '{{CreateOrderForm.data.OrderSizeIn}}',\n\t  '{{CreateOrderForm.data.Product1}}',\n\t  '{{CreateOrderForm.data.Price1}}',\n\t  '{{CreateOrderForm.data.Product2}}',\n\t  '{{CreateOrderForm.data.Price2}}',\n\t  '{{CreateOrderForm.data.Product3}}',\n\t  '{{CreateOrderForm.data.Price3}}',\n\t  '{{CreateOrderForm.data.Product4}}',\n\t  '{{CreateOrderForm.data.Price4}}',\n\t  '{{CreateOrderForm.data.Product5}}',\n\t  '{{CreateOrderForm.data.Price5}}');",
+      "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
           "value": false

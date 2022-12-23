@@ -19,6 +19,7 @@
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "SELECT  \n  Docket,\n\tCOUNT(Log) as Pieces, \n\tSUM(JAS) as TJAS \n\tFROM Scaling WHERE Ordername = '{{Orders.selectedItem.Ordername}}' AND Location = '{{LocTableCopy.selectedRow.Location}}' AND Grade = '{{appsmith.store.Product}}' GROUP BY Docket ORDER BY Docket ASC;",
+      "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
           "value": true

@@ -19,6 +19,7 @@
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "UPDATE Harvestor SET\n\t\tHarvestor = '{{update_harvestor.fieldState.Harvestor.isVisible ? update_harvestor.formData.Harvestor : update_harvestor.sourceData.Harvestor}}',\n\t\tNotes = '{{update_harvestor.fieldState.Notes.isVisible ? update_harvestor.formData.Notes : update_harvestor.sourceData.Notes}}'\nWHERE Harvestor = {{harvestor_table.selectedRow.Harvestor}};\n\nUPDATE Invalid_WeighBridge SET\n\t\tHarvestor = '{{update_harvestor.formData.Harvestor}}'\nWHERE Harvestor = {{harvestor_table.selectedRow.Harvestor}};",
+      "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
           "value": true

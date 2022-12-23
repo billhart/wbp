@@ -19,6 +19,7 @@
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "UPDATE Scaling\nSET Location = '{{MergeAndDeleteLocation.data.LocationSelect}}'\nWHERE Location = '{{location_table.selectedRow.Location}}';\n\nUPDATE Invalid_Scaling\nSET Location = '{{MergeAndDeleteLocation.data.LocationSelect}}'\nWHERE Location = '{{location_table.selectedRow.Location}}';\n\nDELETE FROM Yard_Location WHERE Location = '{{location_table.selectedRow.Location}}';",
+      "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
           "value": true

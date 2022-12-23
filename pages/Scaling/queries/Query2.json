@@ -18,7 +18,8 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "Update Scaling SET Ordername = 'YARD' WHERE 1;",
+      "body": "SELECT\n\t\t\t\tDocket as WDoc,\n\t\t\t\tWB_Docket,\n\t\t\t\tDate as WDate,\n\t\t\t\tCONCAT(ANY_VALUE(Grade),'-',ANY_VALUE(Length)) as WProduct\n\t\t\tFROM WeighBridge",
+      "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
           "value": true

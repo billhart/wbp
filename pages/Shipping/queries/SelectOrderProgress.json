@@ -19,6 +19,7 @@
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "SELECT * FROM\n\t(SELECT Ordername, Capacity  \n\t FROM Orders\n\t JOIN Shipment ON Orders.ShipmentID = Shipment.ShipmentID \n\t WHERE Orders.ShipmentID = {{SelectShipment.selectedOptionValue}}) O\n\tJOIN (SELECT \n\t\t\t\t Ordername,\n\t\t\t\t SUM(JAS) as SJAS,\n\t\t\t\t COUNT(Docket) as Peices,\n\t\t\t\t Grade,\n\t\t\t\t Location \n\t\t\t\tFROM Scaling GROUP BY Ordername, Location, Grade) S ON S.Ordername = O.Ordername;",
+      "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
           "value": true

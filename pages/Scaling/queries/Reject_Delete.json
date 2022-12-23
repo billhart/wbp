@@ -19,6 +19,7 @@
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "DELETE FROM Reject_Scaling\n  WHERE Log IN  ({{reject_data_table.selectedRows.map(row => `'${row.Log}'`).toString()}});",
+      "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
           "value": false

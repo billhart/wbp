@@ -19,9 +19,10 @@
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "UPDATE FPP SET\n\t\tFPP = '{{update_FPP.fieldState.FPP.isVisible ? update_FPP.formData.FPP : update_FPP.sourceData.FPP}}',\n\t\tExpiry = '{{update_FPP.fieldState.Expiry.isVisible ? update_FPP.formData.Expiry : update_FPP.sourceData.Expiry}}'\nWHERE FPP = {{FPP_table.selectedRow.FPP}};\n\nUPDATE Invalid_WeighBridge SET\n\t\tFPP = '{{update_FPP.formData.FPP}}'\nWHERE FPP = {{FPP_table.selectedRow.FPP}};",
+      "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
-          "value": true
+          "value": false
         }
       ]
     },

@@ -19,6 +19,7 @@
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "DELETE FROM Scaling WHERE Log IN ({{valid_table.selectedRows.map(row => `'${row.Log}'`).toString()}});\n\t\n\t",
+      "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
           "value": false

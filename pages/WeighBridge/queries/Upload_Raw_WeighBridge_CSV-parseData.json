@@ -23,6 +23,7 @@
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "() => {\n  return WeighBridge_Picker.files[0].data.split(/\\r?\\n/).slice(1).map(item => `(${item.split(',').map(val => `'${val}'`).join(',')})`).filter(item => item !== `('')`).join(',').replaceAll(\",('')\", '');\n}",
+      "selfReferencingDataPaths": [],
       "jsArguments": [],
       "isAsync": false
     },

@@ -19,6 +19,7 @@
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "INSERT INTO Grade (\n\tGrade,\n\tNotes)\nVALUES (\n\t'{{new_Grade.formData.Grade}}',\n\t'{{new_Grade.formData.Notes}}');",
+      "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
           "value": true

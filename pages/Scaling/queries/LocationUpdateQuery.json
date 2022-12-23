@@ -19,6 +19,7 @@
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "UPDATE Yard_Location SET\n\t\tLocation = '{{update_location.fieldState.Location.isVisible ? update_location.formData.Location.replace(/ /g,'').toUpperCase().substr(0,4) + ' ' + update_location.formData.Location.replace(/ /g,'').toUpperCase().substr(4) : update_location.sourceData.Location}}',\n\t\tDate_Added = '{{update_location.fieldState.Date_Added.isVisible ? update_location.formData.Date_Added.split('T')[0] : update_location.sourceData.Date_Added}}',\n\t\tNotes = '{{update_location.fieldState.Notes.isVisible ? update_location.formData.Notes : update_location.sourceData.Notes}}'\nWHERE Location = {{location_table.selectedRow.Location}};\n\nUPDATE Invalid_Scaling SET\n\t\tLocation = '{{update_location.formData.Location}}'\nWHERE Location = {{location_table.selectedRow.Location}};",
+      "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
           "value": true

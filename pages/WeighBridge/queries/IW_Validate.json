@@ -19,6 +19,7 @@
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "INSERT INTO WeighBridge (\n\tDocket,\n\tWB_Docket,\n\tDate,\n\tRego,\n\tSupplier,\n\tOperations,\n\tCoupe,\n\tHarvestor,\n\tFPP,\n\tGross,\n\tTare,\n\tGMT,\n\tGrade,\n\tLength\n)\nVALUES (\n\t'{{Edit_Invalid.data.DocketIn}}',\n\t'{{iw_data_table.selectedRow.WB_Docket}}',\n\t'{{Edit_Invalid.data.DateIn.split('T')[0]}}',\n\t'{{Edit_Invalid.data.RegoIn}}',\n\t'{{Edit_Invalid.data.SupplierIn}}',\n\t'{{Edit_Invalid.data.OperationsIn}}',\n\t'{{Edit_Invalid.data.CoupeIn}}',\n\t'{{Edit_Invalid.data.HarvestorIn}}',\n\t'{{Edit_Invalid.data.FPPIn}}',\n\t'{{Edit_Invalid.data.GrossIn}}',\n\t'{{Edit_Invalid.data.TareIn}}',\n\t'{{Edit_Invalid.data.GMTIn}}',\n\t'{{Edit_Invalid.data.GradeIn}}',\n\t'{{Edit_Invalid.data.LengthIn}}'\n);\nDELETE FROM Invalid_WeighBridge\n  WHERE WB_Docket = {{iw_data_table.selectedRow.WB_Docket}};",
+      "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
           "value": true
