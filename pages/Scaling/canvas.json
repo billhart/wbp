@@ -13285,6 +13285,14 @@
         "layoutOnLoadActions": [
           [
             {
+              "id": "Scaling_CVR_Zero2",
+              "name": "CVR_Zero2",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
               "id": "Scaling_ILogs",
               "name": "ILogs",
               "confirmBeforeExecute": false,
