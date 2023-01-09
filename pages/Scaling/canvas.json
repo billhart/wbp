@@ -8863,11 +8863,12 @@
                                                   "key": "borderRadius"
                                                 }
                                               ],
-                                              "text": "Split",
+                                              "text": "Reassign",
                                               "key": "dsjnxu2oek",
                                               "isDeprecated": false,
                                               "rightColumn": 64,
                                               "isDefaultClickDisabled": true,
+                                              "iconName": "circle-arrow-right",
                                               "widgetId": "cl6ow8aqmy",
                                               "isVisible": true,
                                               "recaptchaType": "V3",
@@ -8877,7 +8878,8 @@
                                               "isLoading": false,
                                               "disabledWhenInvalid": true,
                                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                                              "buttonVariant": "PRIMARY"
+                                              "buttonVariant": "PRIMARY",
+                                              "iconAlign": "left"
                                             },
                                             {
                                               "boxShadow": "none",
@@ -11400,7 +11402,9 @@
                               "shouldScrollContents": true,
                               "animateLoading": true,
                               "parentColumnSpace": 7.116146087646484,
+                              "dynamicTriggerPathList": [],
                               "leftColumn": 39,
+                              "dynamicBindingPathList": [],
                               "children": [
                                 {
                                   "rightColumn": 455.433349609375,
@@ -11481,7 +11485,7 @@
                                       "originalTopRow": 27,
                                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                                       "maxDynamicHeight": 9000,
-                                      "originalBottomRow": 31,
+                                      "originalBottomRow": 32,
                                       "fontSize": "1rem",
                                       "minDynamicHeight": 4
                                     },
@@ -11890,9 +11894,10 @@
                               "parentId": "tcm3ozc3ug",
                               "renderMode": "CANVAS",
                               "isLoading": false,
-                              "originalTopRow": 46,
+                              "originalTopRow": 47,
+                              "borderRadius": "0.375rem",
                               "maxDynamicHeight": 9000,
-                              "originalBottomRow": 79,
+                              "originalBottomRow": 81,
                               "minDynamicHeight": 10
                             },
                             {
@@ -11916,7 +11921,9 @@
                               "shouldScrollContents": true,
                               "animateLoading": true,
                               "parentColumnSpace": 7.116146087646484,
+                              "dynamicTriggerPathList": [],
                               "leftColumn": 39,
+                              "dynamicBindingPathList": [],
                               "children": [
                                 {
                                   "rightColumn": 455.433349609375,
@@ -11997,7 +12004,7 @@
                                       "originalTopRow": 35,
                                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                                       "maxDynamicHeight": 9000,
-                                      "originalBottomRow": 39,
+                                      "originalBottomRow": 40,
                                       "fontSize": "1rem",
                                       "minDynamicHeight": 4
                                     },
@@ -12324,8 +12331,9 @@
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "originalTopRow": 1,
+                              "borderRadius": "0.375rem",
                               "maxDynamicHeight": 9000,
-                              "originalBottomRow": 42,
+                              "originalBottomRow": 43,
                               "minDynamicHeight": 10
                             },
                             {
@@ -12349,7 +12357,9 @@
                               "shouldScrollContents": true,
                               "animateLoading": true,
                               "parentColumnSpace": 16.9008469581604,
+                              "dynamicTriggerPathList": [],
                               "leftColumn": 0,
+                              "dynamicBindingPathList": [],
                               "children": [
                                 {
                                   "rightColumn": 1081.6542053222656,
@@ -12849,6 +12859,7 @@
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "originalTopRow": 0,
+                              "borderRadius": "0.375rem",
                               "maxDynamicHeight": 9000,
                               "originalBottomRow": 86,
                               "minDynamicHeight": 10
@@ -12884,8 +12895,8 @@
                               "parentId": "tcm3ozc3ug",
                               "renderMode": "CANVAS",
                               "isLoading": false,
-                              "originalTopRow": 42,
-                              "originalBottomRow": 46
+                              "originalTopRow": 43,
+                              "originalBottomRow": 47
                             },
                             {
                               "boxShadow": "none",

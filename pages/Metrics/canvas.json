@@ -2429,9 +2429,9 @@
                         "Expiry": 138,
                         "Coupe": 109,
                         "Gross": 82,
-                        "Tare": 103,
-                        "GMT": 92,
-                        "Grade": 82,
+                        "Tare": 93,
+                        "GMT": 73,
+                        "Grade": 64,
                         "Supplier": 125,
                         "Rego": 128
                       },
@@ -2966,8 +2966,8 @@
                         "task": 245,
                         "step": 62,
                         "status": 75,
-                        "FPP": 85,
-                        "Receivals": 112
+                        "FPP": 66,
+                        "Receivals": 94
                       },
                       "parentRowSpace": 10,
                       "hideCard": false,
