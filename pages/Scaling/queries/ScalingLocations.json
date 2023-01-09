@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "mysql-plugin",
   "unpublishedAction": {
-    "name": "DeleteYardTables",
+    "name": "ScalingLocations",
     "datasource": {
       "name": "Log Base",
       "pluginId": "mysql-plugin",
@@ -13,12 +13,12 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Metrics",
+    "pageId": "Scaling",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "Delete FROM Raw_WeighBridge;\nDelete FROM Raw_Scaling;\nDelete FROM Scaling;\nDelete FROM Invalid_Scaling;\nDelete FROM Reject_Scaling;\nDelete FROM WeighBridge;\nDelete FROM Invalid_WeighBridge;\nDelete FROM Yard_Location;\nDelete FROM Supplier;\nDelete FROM Harvestor;\nDelete FROM Coupe;\nDelete FROM FPP;\nDelete FROM Operations;",
+      "body": "SELECT Docket, \n\t\t\t    CONCAT(ANY_VALUE(Grade),'-',ANY_VALUE(Length)) as Product, \n\t\t\t\t\tLocation,\n\t \t\t\tDate\n\t FROM Scaling GROUP BY Docket, Product, Location, Date",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -26,7 +26,7 @@
         }
       ]
     },
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "dynamicBindingPathList": [],
     "isValid": true,
     "invalids": [],
@@ -37,7 +37,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Metrics_DeleteYardTables",
+  "id": "Scaling_ScalingLocations",
   "deleted": false,
-  "gitSyncId": "62c64eab5a06d81bded2fac9_63858a984984012d5829c434"
+  "gitSyncId": "63a50ddf4064783a6efe67b2_63bb7f494064783a6efe6970"
 }

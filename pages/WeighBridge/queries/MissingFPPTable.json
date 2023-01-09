@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "mysql-plugin",
   "unpublishedAction": {
-    "name": "DeleteYardTables",
+    "name": "MissingFPPTable",
     "datasource": {
       "name": "Log Base",
       "pluginId": "mysql-plugin",
@@ -13,20 +13,20 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Metrics",
+    "pageId": "WeighBridge",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "Delete FROM Raw_WeighBridge;\nDelete FROM Raw_Scaling;\nDelete FROM Scaling;\nDelete FROM Invalid_Scaling;\nDelete FROM Reject_Scaling;\nDelete FROM WeighBridge;\nDelete FROM Invalid_WeighBridge;\nDelete FROM Yard_Location;\nDelete FROM Supplier;\nDelete FROM Harvestor;\nDelete FROM Coupe;\nDelete FROM FPP;\nDelete FROM Operations;",
+      "body": "SELECT DISTINCT Operations,FPP\n\t FROM WeighBridge as W WHERE (Operations, FPP) NOT IN (SELECT Operations, FPP FROM FPPTable);\n",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
-          "value": true
+          "value": false
         }
       ]
     },
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "dynamicBindingPathList": [],
     "isValid": true,
     "invalids": [],
@@ -37,7 +37,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Metrics_DeleteYardTables",
+  "id": "WeighBridge_MissingFPPTable",
   "deleted": false,
-  "gitSyncId": "62c64eab5a06d81bded2fac9_63858a984984012d5829c434"
+  "gitSyncId": "63a50ddf4064783a6efe67b2_63a5596d4064783a6efe68b8"
 }
