@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "Delete FROM Raw_WeighBridge;\nDelete FROM Raw_Scaling;\nDelete FROM Scaling;\nDelete FROM Reject_Scaling;\nDelete FROM WeighBridge;\nDelete FROM Yard_Location;\nDelete FROM Supplier;\nDelete FROM Harvestor;\nDelete FROM Coupe;\nDelete FROM FPP;\nDelete FROM Operations;",
+      "body": "Delete FROM Raw_WeighBridge;\nDelete FROM Raw_Scaling;\nDelete FROM Scaling;\nDelete FROM Invalid_Scaling;\nDelete FROM Reject_Scaling;\nDelete FROM WeighBridge;\nDelete FROM Invalid_WeighBridge;\nDelete FROM Yard_Location;\nDelete FROM Supplier;\nDelete FROM Harvestor;\nDelete FROM Coupe;\nDelete FROM FPP;\nDelete FROM Operations;",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {

@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "INSERT IGNORE INTO Invalid_Scaling (Log, Docket, Grade, Length, Diameter, JAS, Location, Date, Status, Reason)\n  VALUES {{this.params.data}};",
+      "body": "INSERT INTO Invalid_Scaling (Log, Docket, Grade, Length, Diameter, JAS, Location, Date, Reason, Status)\n  VALUES {{this.params.data}};",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {

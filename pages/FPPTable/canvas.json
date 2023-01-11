@@ -1929,8 +1929,8 @@
               "pluginType": "DB",
               "jsonPathKeys": [
                 "fpp_data_table.searchText || \"\"",
-                "fpp_data_table.sortOrder.order || \"ASC\"",
-                "fpp_data_table.sortOrder.column || 'Operations'"
+                "fpp_data_table.sortOrder.column || 'Operations'",
+                "fpp_data_table.sortOrder.order || \"ASC\""
               ],
               "timeoutInMillisecond": 10000
             }

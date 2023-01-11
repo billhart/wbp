@@ -288,6 +288,12 @@
                                 },
                                 {
                                   "key": "textSize"
+                                },
+                                {
+                                  "key": "primaryColumns.Certificate.computedValue"
+                                },
+                                {
+                                  "key": "primaryColumns.Year.computedValue"
                                 }
                               ],
                               "leftColumn": 0,
@@ -323,24 +329,25 @@
                                 "task": 245,
                                 "step": 62,
                                 "status": 75,
-                                "Docket": 107,
-                                "WB_Docket": 111,
+                                "Docket": 86,
+                                "WB_Docket": 97,
                                 "Date": 106,
                                 "Rego": 82,
-                                "Supplier": 78,
+                                "Supplier": 133,
                                 "Operations": 112,
-                                "FPP": 112,
+                                "FPP": 109,
                                 "Coupe": 91,
-                                "Harvestor": 222,
+                                "Harvestor": 119,
                                 "GMT": 69,
                                 "Product": 79,
                                 "Loc": 83,
                                 "Rejected": 68,
-                                "Received": 86,
-                                "Total_Jas": 68,
+                                "Received": 91,
+                                "Total_Jas": 91,
                                 "CVR": 65.99999999999999,
                                 "Pieces": 70,
-                                "Month": 85
+                                "Month": 86,
+                                "Certificate": 87
                               },
                               "widgetName": "receival_table",
                               "defaultPageSize": 0,
@@ -352,6 +359,7 @@
                                 "Supplier",
                                 "Operations",
                                 "FPP",
+                                "Certificate",
                                 "Coupe",
                                 "Harvestor",
                                 "GMT",
@@ -363,7 +371,8 @@
                                 "CVR",
                                 "Pieces",
                                 "Month",
-                                "Week"
+                                "Week",
+                                "Year"
                               ],
                               "dynamicPropertyPathList": [
                                 {
@@ -723,6 +732,44 @@
                                   "label": "Week",
                                   "computedValue": "{{receival_table.sanitizedTableData.map((currentRow) => ( currentRow.Week))}}",
                                   "textColor": "#312e81"
+                                },
+                                "Certificate": {
+                                  "index": 19,
+                                  "width": 150,
+                                  "id": "Certificate",
+                                  "horizontalAlignment": "LEFT",
+                                  "verticalAlignment": "CENTER",
+                                  "columnType": "text",
+                                  "textColor": "#312e81",
+                                  "textSize": "0.75rem",
+                                  "enableFilter": true,
+                                  "enableSort": true,
+                                  "isVisible": true,
+                                  "isDisabled": false,
+                                  "isCellVisible": true,
+                                  "isDerived": false,
+                                  "label": "Certificate",
+                                  "computedValue": "{{receival_table.sanitizedTableData.map((currentRow) => ( currentRow.Certificate))}}",
+                                  "cellBackground": ""
+                                },
+                                "Year": {
+                                  "index": 20,
+                                  "width": 150,
+                                  "id": "Year",
+                                  "horizontalAlignment": "LEFT",
+                                  "verticalAlignment": "CENTER",
+                                  "columnType": "text",
+                                  "textColor": "#312e81",
+                                  "textSize": "0.75rem",
+                                  "enableFilter": true,
+                                  "enableSort": true,
+                                  "isVisible": false,
+                                  "isDisabled": false,
+                                  "isCellVisible": true,
+                                  "isDerived": false,
+                                  "label": "Year",
+                                  "computedValue": "{{receival_table.sanitizedTableData.map((currentRow) => ( currentRow.Year))}}",
+                                  "cellBackground": ""
                                 }
                               },
                               "key": "oy4ag4qfnv",
@@ -1687,6 +1734,15 @@
                                 },
                                 {
                                   "key": "primaryColumns.Loads.computedValue"
+                                },
+                                {
+                                  "key": "primaryColumns.Month.computedValue"
+                                },
+                                {
+                                  "key": "primaryColumns.Year.computedValue"
+                                },
+                                {
+                                  "key": "primaryColumns.M.computedValue"
                                 }
                               ],
                               "leftColumn": 0,
@@ -1737,7 +1793,9 @@
                                 "Loads",
                                 "TotalLogs",
                                 "CVR",
-                                "customColumn1"
+                                "Month",
+                                "Year",
+                                "M"
                               ],
                               "dynamicPropertyPathList": [],
                               "displayName": "Table",
@@ -1957,17 +2015,19 @@
                                   "computedValue": "{{Table2.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Loads\"]))}}",
                                   "validation": {}
                                 },
-                                "customColumn1": {
+                                "Month": {
                                   "allowCellWrapping": false,
                                   "index": 8,
                                   "width": 150,
-                                  "originalId": "customColumn1",
-                                  "id": "customColumn1",
+                                  "originalId": "Month",
+                                  "id": "Month",
                                   "alias": "Month",
                                   "horizontalAlignment": "LEFT",
                                   "verticalAlignment": "CENTER",
                                   "columnType": "text",
+                                  "textColor": "",
                                   "textSize": "0.875rem",
+                                  "fontStyle": "",
                                   "enableFilter": true,
                                   "enableSort": true,
                                   "isVisible": true,
@@ -1975,19 +2035,74 @@
                                   "isCellEditable": false,
                                   "isEditable": false,
                                   "isCellVisible": true,
-                                  "isDerived": true,
+                                  "isDerived": false,
                                   "label": "Month",
                                   "isSaveVisible": true,
                                   "isDiscardVisible": true,
-                                  "computedValue": "",
+                                  "computedValue": "{{Table2.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Month\"]))}}",
                                   "validation": {},
-                                  "buttonStyle": "rgb(3, 179, 101)",
-                                  "labelColor": "#FFFFFF"
+                                  "cellBackground": ""
+                                },
+                                "Year": {
+                                  "allowCellWrapping": false,
+                                  "index": 9,
+                                  "width": 150,
+                                  "originalId": "Year",
+                                  "id": "Year",
+                                  "alias": "Year",
+                                  "horizontalAlignment": "LEFT",
+                                  "verticalAlignment": "CENTER",
+                                  "columnType": "number",
+                                  "textColor": "",
+                                  "textSize": "0.875rem",
+                                  "fontStyle": "",
+                                  "enableFilter": true,
+                                  "enableSort": true,
+                                  "isVisible": true,
+                                  "isDisabled": false,
+                                  "isCellEditable": false,
+                                  "isEditable": false,
+                                  "isCellVisible": true,
+                                  "isDerived": false,
+                                  "label": "Year",
+                                  "isSaveVisible": true,
+                                  "isDiscardVisible": true,
+                                  "computedValue": "{{Table2.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Year\"]))}}",
+                                  "validation": {},
+                                  "cellBackground": ""
+                                },
+                                "M": {
+                                  "allowCellWrapping": false,
+                                  "index": 10,
+                                  "width": 150,
+                                  "originalId": "M",
+                                  "id": "M",
+                                  "alias": "M",
+                                  "horizontalAlignment": "LEFT",
+                                  "verticalAlignment": "CENTER",
+                                  "columnType": "number",
+                                  "textColor": "",
+                                  "textSize": "0.875rem",
+                                  "fontStyle": "",
+                                  "enableFilter": true,
+                                  "enableSort": true,
+                                  "isVisible": false,
+                                  "isDisabled": false,
+                                  "isCellEditable": false,
+                                  "isEditable": false,
+                                  "isCellVisible": true,
+                                  "isDerived": false,
+                                  "label": "M",
+                                  "isSaveVisible": true,
+                                  "isDiscardVisible": true,
+                                  "computedValue": "{{Table2.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"M\"]))}}",
+                                  "validation": {},
+                                  "cellBackground": ""
                                 }
                               },
                               "key": "k05xq741y2",
                               "isDeprecated": false,
-                              "rightColumn": 41,
+                              "rightColumn": 44,
                               "textSize": "0.875rem",
                               "widgetId": "kksz02i7i4",
                               "tableData": "{{Supplier_Select.data}}",
@@ -2314,9 +2429,9 @@
                         "Expiry": 138,
                         "Coupe": 109,
                         "Gross": 82,
-                        "Tare": 103,
-                        "GMT": 92,
-                        "Grade": 82,
+                        "Tare": 93,
+                        "GMT": 73,
+                        "Grade": 64,
                         "Supplier": 125,
                         "Rego": 128
                       },
@@ -2851,8 +2966,8 @@
                         "task": 245,
                         "step": 62,
                         "status": 75,
-                        "FPP": 85,
-                        "Receivals": 112
+                        "FPP": 66,
+                        "Receivals": 94
                       },
                       "parentRowSpace": 10,
                       "hideCard": false,
