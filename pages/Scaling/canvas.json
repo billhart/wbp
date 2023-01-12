@@ -3955,7 +3955,7 @@
                       ],
                       "displayName": "JSON Form",
                       "iconSVG": "/static/media/icon.6bacf7df.svg",
-                      "onSubmit": "{VScaling_Update.run()\n    .then(() => VScaling.run()), (error) => showAlert(`Error while updating resource!\\n ${error}`,'error'))}}",
+                      "onSubmit": "{{VScaling_Update.run()\n    .then(() => VScaling.run())\n\t.catch((error) => showAlert(`Error while updating resource!\\n ${error}`,'error'))}}",
                       "topRow": 0,
                       "bottomRow": 75,
                       "fieldLimitExceeded": false,
@@ -13417,11 +13417,11 @@
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [
-                "invalid_table.pageSize",
-                "invalid_table.sortOrder.column || 'Log'",
-                "invalid_table.sortOrder.order || \"DESC\"",
                 "(invalid_table.pageNo - 1) * invalid_table.pageSize",
-                "invalid_table.searchText || \"\""
+                "invalid_table.pageSize",
+                "invalid_table.searchText || \"\"",
+                "invalid_table.sortOrder.column || 'Log'",
+                "invalid_table.sortOrder.order || \"DESC\""
               ],
               "timeoutInMillisecond": 60000
             },

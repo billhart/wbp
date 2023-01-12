@@ -215,7 +215,7 @@
                     {
                       "boxShadow": "none",
                       "widgetName": "Button3CopyCopy1",
-                      "onClick": "{{OperationsDeleteQuery.run(() => OperationsAll.run(() => Operations.run(() => closeModal('Delete_Operations'))))}}",
+                      "onClick": "{{OperationsDeleteQuery.run()\n    .then(() => OperationsAll.run()\n        .then(() => Operations.run()\n            .then(() => closeModal('Delete_Operations_Modal'))))\n    .catch((error) => showAlert(`Error while deleting!\\n ${error}`,'error'))}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                       "dynamicPropertyPathList": [
                         {
@@ -488,7 +488,7 @@
                     {
                       "boxShadow": "none",
                       "widgetName": "Button3CopyCopy",
-                      "onClick": "{{SupplierDeleteQuery.run(() => SupplierAll.run(() => Supplier.run(() => closeModal('Delete_Supplier'))))}}",
+                      "onClick": "{{SupplierDeleteQuery.run()\n    .then(() => SupplierAll.run()\n        .then(() => Supplier.run()\n            .then(() => closeModal('Delete_Supplier_Modal'))))\n    .catch((error) => showAlert(`Error while deleting!\\n ${error}`,'error'))}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                       "dynamicPropertyPathList": [
                         {
@@ -722,7 +722,7 @@
                     {
                       "boxShadow": "none",
                       "widgetName": "Delete_ButtonCopy",
-                      "onClick": "{{SupplierMergeQuery.run(() => SupplierAll.run(() => Supplier.run(() => closeModal('Merge_Supplier_Modal'))), () => {})}}",
+                      "onClick": "{{SupplierMergeQuery.run()\n    .then(() => SupplierAll.run()\n        .then(() => Supplier.run()\n            .then(() => closeModal('Merge_Supplier_Modal'))))\n    .catch((error) => showAlert(`Error while merging!\\n ${error}`,'error'))}}",
                       "dynamicPropertyPathList": [
                         {
                           "key": "onClick"
@@ -2349,7 +2349,7 @@
                               "resetFormOnClick": true,
                               "boxShadow": "none",
                               "widgetName": "submit",
-                              "onClick": "{{IW_Validate.run(\n    () => IW_Select.run(() => WB_Select.run(() => Count_Rows.run()),err => showAlert(err)), \n    (error) => showAlert(`Error while validating weighbridge entry!\\n ${error}`,'error')\n)}}",
+                              "onClick": "{{IW_Validate.run()\n    .then(() => IW_Select.run()\n        .then(() => Count_Rows.run()\n            .then(() => closeModal('WB_Add'))))\n\t.catch((err) => showAlert(`Error while validating weighbridge entry!\\n ${err}`,'error'))\n}}",
                               "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                               "dynamicPropertyPathList": [
                                 {
@@ -5755,7 +5755,7 @@
                             {
                               "boxShadow": "none",
                               "widgetName": "Delete_Button",
-                              "onClick": "{{HarvestorMergeQuery.run(() => HarvestorAll.run(() => Harvestor.run(() => closeModal('Merge_Harvestor_Modal'))), () => {})}}",
+                              "onClick": "{{HarvestorMergeQuery.run()\n    .then(() => HarvestorAll.run()\n        .then(() => Harvestor.run()\n            .then(() => closeModal('Merge_Harvestor_Modal'))))\n    .catch((error) => showAlert(`Error while merging!\\n ${error}`,'error'))}}",
                               "dynamicPropertyPathList": [
                                 {
                                   "key": "onClick"
@@ -6006,7 +6006,7 @@
                             {
                               "boxShadow": "none",
                               "widgetName": "Button3Copy",
-                              "onClick": "{{HarvestorDeleteQuery.run(() => HarvestorAll.run(() => Harvestor.run(() => closeModal('Delete_Harvestor'))))}}",
+                              "onClick": "{{HarvestorDeleteQuery.run()\n    .then(() => HarvestorAll.run()\n        .then(() => Harvestor.run()\n            .then(() => closeModal('Delete_Harvestor_Modal'))))\n    .catch((error) => showAlert(`Error while deleting!\\n ${error}`,'error'))}}",
                               "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                               "dynamicPropertyPathList": [
                                 {
@@ -6187,7 +6187,7 @@
                       ],
                       "displayName": "JSON Form",
                       "iconSVG": "/static/media/icon.6bacf7df.svg",
-                      "onSubmit": "{{HarvestorInsertQuery.run(\n\t() => HarvestorAll.run(() => Harvestor.run()), \n\t(error) => showAlert(`Error while inserting resource!\\n ${error}`,'error'))\n}}",
+                      "onSubmit": "{{HarvestorInsertQuery.run()\n\t.then(() => HarvestorAll.run()\n        .then(() => Harvestor.run())) \n\t.catch((error) => showAlert(`Error while inserting resource!\\n ${error}`,'error'))\n}}",
                       "topRow": 0,
                       "bottomRow": 38,
                       "fieldLimitExceeded": false,
@@ -6456,7 +6456,7 @@
                       ],
                       "displayName": "JSON Form",
                       "iconSVG": "/static/media/icon.6bacf7df.svg",
-                      "onSubmit": "{{HarvestorUpdateQuery.run(() => Harvestor.run(), (error) => showAlert(`Error while updating resource!\\n ${error}`,'error'))}}",
+                      "onSubmit": "{{HarvestorUpdateQuery.run()\n\t.then(() => HarvestorAll.run()\n    .then(() => Harvestor.run()))\n    .catch((error) => showAlert(`Error while updating resource!\\n ${error}`,'error'))}}",
                       "topRow": 0,
                       "bottomRow": 38,
                       "fieldLimitExceeded": false,
@@ -7413,7 +7413,7 @@
                       ],
                       "displayName": "JSON Form",
                       "iconSVG": "/static/media/icon.6bacf7df.svg",
-                      "onSubmit": "{{SupplierInsertQuery.run(\n\t() => SupplierAll.run(() => Supplier.run()), \n\t(error) => showAlert(`Error while inserting resource!\\n `,'error'))\n}}",
+                      "onSubmit": "{{SupplierInsertQuery.run()\n\t.then(() => SupplierAll.run()\n        .then(() => Supplier.run())) \n\t.catch((error) => showAlert(`Error while inserting resource!\\n ${error}`,'error'))\n}}",
                       "topRow": 0,
                       "bottomRow": 38,
                       "fieldLimitExceeded": false,
@@ -7684,7 +7684,7 @@
                       ],
                       "displayName": "JSON Form",
                       "iconSVG": "/static/media/icon.6bacf7df.svg",
-                      "onSubmit": "{{SupplierUpdateQuery.run(() => SupplierAll.run(() => Supplier.run()), (error) => showAlert(`Error while updating resource!\\n ${error}`,'error'))}}",
+                      "onSubmit": "{{SupplierUpdateQuery.run()\n    .then(() => SupplierAll.run()\n\t.then(() => Supplier.run()))\n    .catch((error) => showAlert(`Error while updating resource!\\n ${error}`,'error'))}}",
                       "topRow": 0,
                       "bottomRow": 38,
                       "fieldLimitExceeded": false,
@@ -8646,7 +8646,7 @@
                       ],
                       "displayName": "JSON Form",
                       "iconSVG": "/static/media/icon.6bacf7df.svg",
-                      "onSubmit": "{{OperationsInsertQuery.run(\n\t() => OperationsAll.run(() => Operations.run()), \n\t(error) => showAlert(`Error while inserting resource!\\n ${error}`,'error'))\n}}",
+                      "onSubmit": "{{OperationsInsertQuery.run()\n\t.then(() => OperationsAll.run()\n        .then(() => Operations.run())) \n\t.catch((error) => showAlert(`Error while inserting resource!\\n ${error}`,'error'))\n}}",
                       "topRow": 0,
                       "bottomRow": 30,
                       "fieldLimitExceeded": false,
@@ -8921,7 +8921,7 @@
                       ],
                       "displayName": "JSON Form",
                       "iconSVG": "/static/media/icon.6bacf7df.svg",
-                      "onSubmit": "{{OperationsUpdateQuery.run(() => OperationsAll.run(() => Operations.run()), (error) => showAlert(`Error while updating resource!\\n ${error}`,'error'))}}",
+                      "onSubmit": "{{OperationsUpdateQuery.run()\n    .then(() => OperationsAll.run()\n        .then(() => Operations.run()))\n    .catch((error) => showAlert(`Error while updating resource!\\n ${error}`,'error'))}}",
                       "topRow": 0,
                       "bottomRow": 30,
                       "fieldLimitExceeded": false,
@@ -9936,7 +9936,7 @@
                             {
                               "boxShadow": "none",
                               "widgetName": "Delete_ButtonCopy1",
-                              "onClick": "{{OperationsMergeQuery.run(() => OperationsAll.run(() => Operations.run(() => closeModal('Merge_Operations_Modal'))), () => {})}}",
+                              "onClick": "{{OperationsMergeQuery.run()\n    .then(() => OperationsAll.run()\n        .then(() => Operations.run()\n            .then(() => closeModal('Merge_Operations_Modal'))))\n    .catch((error) => showAlert(`Error while merging!\\n ${error}`,'error'))}}",
                               "dynamicPropertyPathList": [
                                 {
                                   "key": "onClick"
@@ -10150,7 +10150,7 @@
                       ],
                       "displayName": "JSON Form",
                       "iconSVG": "/static/media/icon.6bacf7df.svg",
-                      "onSubmit": "{{CoupeInsertQuery.run(\n\t() => CoupeAll.run(() => Coupe.run()), \n\t(error) => showAlert(`Error while inserting resource!\\n ${error}`,'error'))\n}}",
+                      "onSubmit": "{{CoupeInsertQuery.run()\n\t.then(() => CoupeAll.run()\n        .then(() => Coupe.run())) \n\t.catch((error) => showAlert(`Error while inserting resource!\\n ${error}`,'error'))\n}}",
                       "topRow": 0,
                       "bottomRow": 30,
                       "fieldLimitExceeded": false,
@@ -10425,7 +10425,7 @@
                       ],
                       "displayName": "JSON Form",
                       "iconSVG": "/static/media/icon.6bacf7df.svg",
-                      "onSubmit": "{{CoupeUpdateQuery.run(() => CoupeAll.run(() => Coupe.run()), (error) => showAlert(`Error while updating resource!\\n ${error}`,'error'))}}",
+                      "onSubmit": "{{CoupeUpdateQuery.run()\n    .then(() => CoupeAll.run()\n        .then(() => Coupe.run()))\n    .catch((error) => showAlert(`Error while updating resource!\\n ${error}`,'error'))}}",
                       "topRow": 0,
                       "bottomRow": 30,
                       "fieldLimitExceeded": false,
@@ -11440,7 +11440,7 @@
                             {
                               "boxShadow": "none",
                               "widgetName": "Delete_ButtonCopy1Copy",
-                              "onClick": "{{CoupeMergeQuery.run(() => CoupeAll.run(() => Coupe.run(() => closeModal('Merge_Coupe_Modal'))), () => {})}}",
+                              "onClick": "{{CoupeMergeQuery.run()\n    .then(() => CoupeAll.run()\n        .then(() => Coupe.run()\n            .then(() => closeModal('Merge_Coupe_Modal'))))\n    .catch((error) => showAlert(`Error while merging!\\n ${error}`,'error'))}}",
                               "dynamicPropertyPathList": [
                                 {
                                   "key": "onClick"
@@ -11696,7 +11696,7 @@
                             {
                               "boxShadow": "none",
                               "widgetName": "Button3CopyCopy2Copy",
-                              "onClick": "{{CoupeDeleteQuery.run(() => CoupeAll.run(() => Coupe.run(() => closeModal('Delete_Coupe'))))}}",
+                              "onClick": "{{CoupeDeleteQuery.run()\n    .then(() => CoupeAll.run()\n        .then(() => Coupe.run()\n            .then(() => closeModal('Delete_Coupe_Modal'))))\n    .catch((error) => showAlert(`Error while deleting!\\n ${error}`,'error'))}}",
                               "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                               "dynamicPropertyPathList": [
                                 {
@@ -11920,7 +11920,7 @@
                       ],
                       "displayName": "JSON Form",
                       "iconSVG": "/static/media/icon.6bacf7df.svg",
-                      "onSubmit": "{{UpdateLengthQuery.run(() => LengthsAll.run(() => Lengths.run()), (error) => showAlert(`Error while updating resource!\\n ${error}`,'error'))}}",
+                      "onSubmit": "{{UpdateLengthQuery.run()\n    .then(() => LengthAll.run()\n        .then(() => Length.run()))\n    .catch((error) => showAlert(`Error while updating resource!\\n ${error}`,'error'))}}",
                       "topRow": 0,
                       "bottomRow": 37,
                       "fieldLimitExceeded": false,
@@ -12197,7 +12197,7 @@
                       ],
                       "displayName": "JSON Form",
                       "iconSVG": "/static/media/icon.6bacf7df.svg",
-                      "onSubmit": "{{InsertLengthQuery.run(() => LengthsAll.run(() => Lengths.run()), (error) => showAlert(`Error while updating resource!\\n ${error}`,'error'))}}",
+                      "onSubmit": "{{InsertLengthQuery.run()\n\t.then(() => LengthAll.run()\n        .then(() => Length.run())) \n\t.catch((error) => showAlert(`Error while inserting resource!\\n ${error}`,'error'))\n}}",
                       "topRow": 37,
                       "bottomRow": 74,
                       "fieldLimitExceeded": false,
@@ -12745,7 +12745,7 @@
                       ],
                       "displayName": "JSON Form",
                       "iconSVG": "/static/media/icon.6bacf7df.svg",
-                      "onSubmit": "{{InsertGradeQuery.run(() => GradeAll.run(() => Grade.run()), (error) => showAlert(`Error while updating resource!\\n ${error}`,'error'))}}",
+                      "onSubmit": "{{InsertGradeQuery.run()\n\t.then(() => GradeAll.run()\n        .then(() => Grade.run())) \n\t.catch((error) => showAlert(`Error while inserting resource!\\n ${error}`,'error'))\n}}",
                       "topRow": 37,
                       "bottomRow": 74,
                       "fieldLimitExceeded": false,
@@ -13298,7 +13298,7 @@
                       ],
                       "displayName": "JSON Form",
                       "iconSVG": "/static/media/icon.6bacf7df.svg",
-                      "onSubmit": "{{UpdateGradeQuery.run(() => GradeAll.run(() => Grade.run()), (error) => showAlert(`Error while updating resource!\\n ${error}`,'error'))}}",
+                      "onSubmit": "{{UpdateGradeQuery.run()\n    .then(() => GradeAll.run()\n        .then(() => Grade.run()))\n    .catch((error) => showAlert(`Error while updating resource!\\n ${error}`,'error'))}}",
                       "topRow": 0,
                       "bottomRow": 37,
                       "fieldLimitExceeded": false,
@@ -13624,7 +13624,7 @@
                       ],
                       "displayName": "JSON Form",
                       "iconSVG": "/static/media/icon.6bacf7df.svg",
-                      "onSubmit": "{{FPPInsertQuery.run(\n\t() => FPPAll.run(() => FPP.run()), \n\t(error) => showAlert(`Error while inserting resource!\\n ${error}`,'error'))\n}}",
+                      "onSubmit": "{{FPPInsertQuery.run()\n\t.then(() => FPPAll.run()\n        .then(() => FPP.run())) \n\t.catch((error) => showAlert(`Error while inserting resource!\\n ${error}`,'error'))\n}}",
                       "topRow": 38,
                       "bottomRow": 76,
                       "fieldLimitExceeded": false,
@@ -13902,7 +13902,7 @@
                       ],
                       "displayName": "JSON Form",
                       "iconSVG": "/static/media/icon.6bacf7df.svg",
-                      "onSubmit": "{{FPPUpdateQuery.run(() => FPPAll.run(() => FPP.run()), (error) => showAlert(`Error while updating resource!\\n ${error}`,'error'))}}",
+                      "onSubmit": "{{FPPUpdateQuery.run()\n    .then(() => FPPAll.run()\n        .then(() => FPP.run()))\n    .catch((error) => showAlert(`Error while updating resource!\\n ${error}`,'error'))}}",
                       "topRow": 0,
                       "bottomRow": 38,
                       "fieldLimitExceeded": false,
@@ -14459,7 +14459,7 @@
                               "resetFormOnClick": true,
                               "boxShadow": "none",
                               "widgetName": "FormButton1CopyCopy1Copy1",
-                              "onClick": "{{showModal('Delete_FPP')}}",
+                              "onClick": "{{showModal('Delete_FPP_Modal')}}",
                               "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                               "displayName": "FormButton",
                               "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
@@ -14916,7 +14916,7 @@
                             {
                               "boxShadow": "none",
                               "widgetName": "Delete_ButtonCopy1Copy1",
-                              "onClick": "{{FPPMergeQuery.run(() => FPPAll.run(() => FPP.run(() => closeModal('Merge_FPP_Modal'))), () => {})}}",
+                              "onClick": "{{FPPMergeQuery.run()\n    .then(() => FPPAll.run()\n        .then(() => FPP.run()\n            .then(() => closeModal('Merge_FPP_Modal'))))\n    .catch((error) => showAlert(`Error while merging!\\n ${error}`,'error'))}}",
                               "dynamicPropertyPathList": [
                                 {
                                   "key": "onClick"
@@ -15172,7 +15172,7 @@
                             {
                               "boxShadow": "none",
                               "widgetName": "Button3CopyCopy2Copy1",
-                              "onClick": "{{FPPDeleteQuery.run(() => FPPAll.run(() => FPP.run(() => closeModal('Delete_FPP_Modal'))))}}",
+                              "onClick": "{{FPPDeleteQuery.run()\n    .then(() => FPPAll.run()\n        .then(() => FPP.run()\n            .then(() => closeModal('Delete_FPP_Modal'))))\n    .catch((error) => showAlert(`Error while deleting!\\n ${error}`,'error'))}}",
                               "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                               "dynamicPropertyPathList": [
                                 {
@@ -15306,7 +15306,7 @@
                               "borderColor": "#E0DEDE",
                               "isVisibleDownload": false,
                               "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
-                              "topRow": 11,
+                              "topRow": 8,
                               "isSortable": true,
                               "type": "TABLE_WIDGET_V2",
                               "inlineEditingSaveOption": "ROW_LEVEL",
@@ -15365,7 +15365,7 @@
                                 }
                               },
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                              "originalBottomRow": 87,
+                              "originalBottomRow": 84,
                               "defaultSelectedRowIndices": [
                                 0
                               ],
@@ -15377,7 +15377,7 @@
                               ],
                               "dynamicPropertyPathList": [],
                               "displayName": "Table",
-                              "bottomRow": 84,
+                              "bottomRow": 81,
                               "columnWidthMap": {
                                 "task": 245,
                                 "step": 62,
@@ -15477,7 +15477,7 @@
                                 "label"
                               ],
                               "topRow": 2,
-                              "bottomRow": 9,
+                              "bottomRow": 6,
                               "parentRowSpace": 10,
                               "type": "TEXT_WIDGET",
                               "hideCard": false,
@@ -16678,7 +16678,7 @@
                               "resetFormOnClick": true,
                               "boxShadow": "none",
                               "widgetName": "FormButton3",
-                              "onClick": "{{WB_Insert.run(() => WB_Select.run(() => Count_Rows.run(() => closeModal('WB_Add')),err => showAlert(err), \n    (error) => showAlert(`Error while updating weighbridge entry!\\n ${error}`,'error')\n))}}",
+                              "onClick": "{{WB_Insert.run()\n    .then(() => WB_Select.run()\n        .then(() => Count_Rows.run()\n            .then(() => closeModal('WB_Add'))))\n\t.catch((err) => showAlert(`Error while updating weighbridge entry!\\n ${err}`,'error'))\n}}",
                               "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                               "dynamicPropertyPathList": [
                                 {
