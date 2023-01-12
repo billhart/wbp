@@ -10636,7 +10636,7 @@
                                               "text": "Change Missing Docket:",
                                               "key": "c65oz6lv2j",
                                               "isDeprecated": false,
-                                              "rightColumn": 18,
+                                              "rightColumn": 15,
                                               "textAlign": "LEFT",
                                               "dynamicHeight": "FIXED",
                                               "widgetId": "b2eedbwqco",
@@ -10719,7 +10719,7 @@
                                               "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
                                               "parentColumnSpace": 4.022361755371094,
                                               "dynamicTriggerPathList": [],
-                                              "leftColumn": 18,
+                                              "leftColumn": 15,
                                               "dynamicBindingPathList": [
                                                 {
                                                   "key": "fontFamily"
@@ -10736,7 +10736,7 @@
                                               "text": "{{Invalid_Dockets_Table.selectedRow.Docket}}",
                                               "key": "c65oz6lv2j",
                                               "isDeprecated": false,
-                                              "rightColumn": 26,
+                                              "rightColumn": 23,
                                               "textAlign": "LEFT",
                                               "dynamicHeight": "FIXED",
                                               "widgetId": "gn97y6gqyu",
@@ -10758,14 +10758,14 @@
                                               "isFilterable": true,
                                               "displayName": "Select",
                                               "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
-                                              "labelText": "To:",
+                                              "labelText": "To Unscaled:",
                                               "searchTags": [
                                                 "dropdown"
                                               ],
                                               "topRow": 0,
                                               "bottomRow": 4,
                                               "parentRowSpace": 10,
-                                              "labelWidth": "3",
+                                              "labelWidth": "8",
                                               "type": "SELECT_WIDGET",
                                               "serverSideFiltering": false,
                                               "hideCard": false,
@@ -10773,7 +10773,7 @@
                                               "animateLoading": true,
                                               "parentColumnSpace": 4.022361755371094,
                                               "dynamicTriggerPathList": [],
-                                              "leftColumn": 29,
+                                              "leftColumn": 24,
                                               "dynamicBindingPathList": [
                                                 {
                                                   "key": "accentColor"
