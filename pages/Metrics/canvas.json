@@ -1691,7 +1691,7 @@
                           "children": [
                             {
                               "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-                              "isVisibleDownload": false,
+                              "isVisibleDownload": true,
                               "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
                               "topRow": 0,
                               "isSortable": true,
@@ -1749,7 +1749,7 @@
                               "delimiter": ",",
                               "defaultSelectedRowIndex": 0,
                               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-                              "isVisibleFilters": false,
+                              "isVisibleFilters": true,
                               "isVisible": true,
                               "enableClientSideSearch": true,
                               "version": 1,
@@ -2111,7 +2111,7 @@
                               "parentId": "y8razzvnu7",
                               "renderMode": "CANVAS",
                               "horizontalAlignment": "LEFT",
-                              "isVisibleSearch": false,
+                              "isVisibleSearch": true,
                               "isVisiblePagination": false,
                               "verticalAlignment": "CENTER"
                             }
