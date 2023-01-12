@@ -2206,7 +2206,7 @@
                               ],
                               "displayName": "JSON Form",
                               "iconSVG": "/static/media/icon.6bacf7df.svg",
-                              "onSubmit": "{{IScaling_Update.run(() => IScaling.run(), (error) => showAlert(`Error while updating resource!\\n ${error}`,'error'))}}",
+                              "onSubmit": "{{IScaling_Update.run()\n    .then(() => IScaling.run())\n    .catch((error) => showAlert(`Error while updating resource!\\n ${error}`,'error'))}}",
                               "topRow": 0,
                               "bottomRow": 78,
                               "fieldLimitExceeded": false,
