@@ -2967,7 +2967,7 @@
                         "step": 62,
                         "status": 75,
                         "FPP": 66,
-                        "Receivals": 94
+                        "Receivals": 95
                       },
                       "parentRowSpace": 10,
                       "hideCard": false,
@@ -3053,7 +3053,7 @@
                       },
                       "key": "07s8ucy7uo",
                       "isDeprecated": false,
-                      "rightColumn": 8,
+                      "rightColumn": 9,
                       "textSize": "0.875rem",
                       "widgetId": "5n8tg9xg43",
                       "tableData": "{{Count_Rows.data}}",
@@ -3926,7 +3926,7 @@
                       "topRow": 6,
                       "bottomRow": 84,
                       "parentRowSpace": 10,
-                      "source": "http://168.138.12.144:5000/",
+                      "source": "http://168.138.12.144:10000/",
                       "type": "IFRAME_WIDGET",
                       "title": "Excel uploader",
                       "hideCard": false,
